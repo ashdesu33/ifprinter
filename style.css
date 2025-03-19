@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'routed-gothic-wide';
+
+    src: url('src/font/routed-gothic-wide.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'routed-gothic-narrow';
+    src: url('src/font/routed-gothic-narrow.ttf')format('truetype');
+    font-weight: normal;
+    font-style: narrow;
+}
+
+
+
+body{
+    margin: 0;
+    background: #ececec;
+}
+
+#checkerboard {
+    display: flex;
+    width: 100vw;
+}
+  
+.checker-unit {
+    height: 100%;
+}
+
+.header{
+    font-family: "routed-gothic-wide";
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header p{
+    margin: 2% 3% 0 3%;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+
+#header-home{
+    font-size: 25px;
+    line-height: 28px;
+}
+.index-dataset{
+    margin: 2% 3% 0 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.index-logtitle{
+    font-family: "routed-gothic-narrow";
+    font-size: 20px;
+}
+.index-button-container{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    justify-content: flex-end;
+}
+.index-button{
+    font-family: "routed-gothic-wide";
+    font-size: 15px;
+    box-shadow: inset 2px 2px 1px rgb(171, 168, 168);;
+    margin-right: 5px;
+                
+    background: linear-gradient(to bottom, #ededf3 0%, #d8d8e1 10%);
+    border-color: none;
+}
+.index-button:hover{
+    background: aquamarine;
+}
+.content-dataset{
+    margin: 4% 3% 0 3%;
+}
+
+.gallery-item {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(50px); /* Start from below */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When JS adds "show" class, it triggers animation */
+.gallery-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#gallery-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev { left: -40px; }
+.next { right: -40px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#figure{
+    width:130px;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 34%;
+    left: 43%; 
+}
+
+
+/* WEEK 4 STYLE */
+.node circle { fill: white; stroke: black; stroke-width: 2px; }
+        .link { stroke-width: 2px; }
+        .digital { stroke: blue; }
+        .physical { stroke: red; }
+        .common { stroke: green;}
+        circle{stroke: white; fill:white;}
+        text { font-size: 12px; background-color: #b3b3cf; text-anchor: middle; font-family: Arial, Helvetica, sans-serif; }
+
+
+@media screen and (min-width: 900px) {
+    .header p{
+        margin: 2% 3% 0 3%;
+        font-size: 30px;
+        background-color: aquamarine;
+    }
+    #header-home{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .index-button, .index-logtitle{
+        font-size: 30px;
+    }
+
+}
