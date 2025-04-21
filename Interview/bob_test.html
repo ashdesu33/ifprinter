@@ -1,0 +1,40 @@
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="interview.css">
+ </head>
+ <body>
+    <div id="checkerboard"></div>
+    <div class="header"></div>
+  <div class="interview-info">
+    <div class="interview-sub-title">Interview with Bob Nangle</div>
+    <div class="interview-main-title">On Press: The Memory, Running Machine, and Meridian Printing</div>
+    <img src="bob_src/The-Journey.jpg" style="filter:grayscale(0.8)">
+    
+  </div> 
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="filter">
+      <feComponentTransfer>
+        <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
+      </feComponentTransfer>
+    </filter>
+</svg>
+  <nav id="nav-section"></nav>
+  <nav id="nav-page"></nav>
+  
+  <article class="interview">
+    <div class="interview-gallery"></div>
+  </article>  
+  <script src="../script/header.js"></script>
+  <!-- <script src="navigation.js"></script> -->
+  <script src="bob_src/bob.js"></script>
+<script src="interview.js"></script>
+<script>
+  loadInterviewFromMarkdown("bob.md");
+</script>
+</body>
+</html>

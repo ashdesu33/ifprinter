@@ -1,10 +1,43 @@
 function week4() {
-public.innerHTML="";
+gallery.innerHTML="";
+note.innerHTML='';
+
+gallery.style.background="black";
+note.style.background="black";
+note.style.color="white";
+
+note.innerHTML=`
+<h3> week 4 note </h3>
+<hr>
+<h3>CHRONICLES</h3>
+
+  <p>
+    I’m interested in making things physical, but I’m also bad at building stuff. Even with all the YouTube tutorial’s help, my plotter’s z-axis and y-axis still work so poorly that I have to hold the paper all the time to make sure it at least draws something on the paper, and the final printed images have so little in common with the image I programmed. The whole process was frustrating, yet funny to me because how this machine failed so hard at its work just like its creator. It’s funny that after countless retries, moving and pressing the paper with the motors, I was finally able to produce enough “failed” works that I can stage them as they were intended to fail like this.
+  </p>
+
+  <h3>ANALYSIS – Viktor by Jürg Lehni</h3>
+
+  <p>
+    Whether it is intentionally or unintentionally, the tools have hugely shifted the ways of visual communication. The profession of visual design is hugely intertwined with the history of technology and production, and hence the overpowering of machines has caused a rising fear and anxiety of being replaced/left behind. This is why Jürg’s work <em>Viktor</em> became an important reference to speculate the proposition of the machinery and human in the post-industrial era. By actively collaborating with the lecturer, Jürg’s drawing machine has shifted focus on the special imperfect texture defined by gestures of moving motors and the human body.
+  </p>
+
+  <h3>POSSIBLE PROPOSITIONS (Strategies)</h3>
+
+  <p>
+    In the western graphic design education, there is a special stress on typography as a result of modern graphic design practice established by the Bauhaus and Swiss schools. As Jan Tschichold has stated in <em>The Principle of New Typography</em>, the development of technology has shifted the printed matter focus less in form but in quantity, hence the typography became a crucial component to adapt the modern functional needs for visual communication, and should strive for clarity rather than the excessive ornament. Jan Tschichold is right to point out the tendency of visual communication is always in relation to the market needs and material condition. However, I assume he would still be surprised how fast the information consumption has become. It becomes dangerous when designers become too responsive to the market demand. How do we draw the line between utilitarian and functional? The clarity of typography for whom?
+  </p>
+
+  <p>
+    Typography, or graphic design in general, should position themselves as parts of intentions to establish visual experiences with the collaboration of community rather than functional entities. To distinguish an experience from a functional entity is that experience does not necessarily have to result in the designated purpose, but it is the intention to find the maximum intersection with the acknowledgment of the inevitable failures in generalization. Now the urgency is not about whether there is a way to invent a new experience–there is nothing left to be invented–but how to regain the communal space without converting the “others” to “us”, "us" to the "others".
+  </p>
+`
+
+
 d3.select("#process-graph").remove(); // Remove existing SVG
-d3.select("body").append("svg") // Recreate a new SVG
+d3.select(".gallery").append("svg") // Recreate a new SVG
     .attr("id", "process-graph")
-    .attr("width", "100vw")
-    .attr("height", "100vh")
+    .attr("width", "400px")
+    .attr("height", "400px")
     .attr("y","-100");
 
     
@@ -51,8 +84,8 @@ d3.select("body").append("svg") // Recreate a new SVG
     ];
     const svg = d3.select("#process-graph");
             svg.style("display", "block");
-    const width = window.innerWidth;
-    const height = window.innerHeight * 0.8;
+    const width = 800;
+    const height = 800;
             svg.attr("width", width).attr("height", height);
     const simulation = d3.forceSimulation(nodes)
             .force("link", d3.forceLink(links).id(d => d.id).distance(80))

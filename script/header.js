@@ -1,8 +1,8 @@
 let header = "";
 const headerContainer= document.querySelector('.header').innerHTML;
 header = `
-    <p id="header-home">if every man is a printer</p>
-    <p class="header-directory"> about </p>
+    <p id="header-home" onclick="home()">if every man is a printer</p>
+    <p id="header-directory"> about </p>
 `
 document.querySelector('.header').innerHTML = header;
 
@@ -23,6 +23,10 @@ function createCheckerboard() {
         unit.style.backgroundColor = i % 2 === 0 ? "black" : " #CBCBD9;";
         container.appendChild(unit);
     }
+}
+
+function home(){
+    window.location.href = '/';
 }
 
 
