@@ -26,10 +26,12 @@ async function loadInterviewFromMarkdown(mdPath) {
       div.appendChild(audioEl);
   
       if (question && question !== lastQuestion) {
+        const q_container = document.createElement('div');
         const q = document.createElement('p');
-        q.className = 'question';
+        q_container.className = 'question';
         q.innerText = question;
-        currentSubsection.appendChild(q);
+        q_container.appendChild(q);
+        currentSubsection.appendChild(q_container);
         lastQuestion = question;
       }
   
@@ -161,43 +163,64 @@ async function loadInterviewFromMarkdown(mdPath) {
   
   function updateGalleryOnScroll() {
     const gallery = document.querySelector('.interview-gallery');
-    const headings = document.querySelectorAll('section h3');
-    let loaded = false;
+    const responds = document.querySelectorAll('[id^="respond-"]');
+    const imageMap = window.respondImageMap || {};
+    let currentIndex = -1;
   
-    headings.forEach((h3, index) => {
-      const rect = h3.getBoundingClientRect();
-      if (index === 0 && rect.top > window.innerHeight * 0.2) {
-        gallery.classList.remove('show');
-        lastLoaded = null;
-        loaded = true;
-        return;
+    for (let i = 0; i < responds.length; i++) {
+      const rect = responds[i].getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.5) {
+        currentIndex = i;
+      }
+    }
+  
+    if (currentIndex === -1) {
+      gallery.classList.remove('show');
+      gallery.innerHTML = '';
+      return;
+    }
+  
+    const currentEl = responds[currentIndex];
+    const nextEl = responds[currentIndex + 1];
+  
+    const currentImgPath = imageMap[currentEl.id];
+    const nextImgPath = nextEl ? imageMap[nextEl.id] : null;
+  
+    const existingImg = gallery.querySelector('img.current-image');
+    if (existingImg && currentImgPath && existingImg.src.includes(currentImgPath)) {
+      return; // don't reload same image
+    }
+  
+    gallery.classList.remove('show');
+  
+    setTimeout(() => {
+      gallery.innerHTML = '';
+  
+      if (currentImgPath) {
+        const currentImg = document.createElement('img');
+        currentImg.src = currentImgPath;
+        currentImg.alt = currentEl.id;
+        currentImg.className = 'current-image';
+        gallery.appendChild(currentImg);
       }
   
-      if (!loaded && Math.abs(rect.top) < 100 && h3 !== lastLoaded) {
-        const rawTitle = h3.textContent.trim();
-        const safeTitle = rawTitle.replace(/\s+/g, '-');
-        const imageName = `bob_src/${safeTitle}.jpg`;
-  
-        const img = document.createElement('img');
-        img.src = imageName;
-        img.alt = rawTitle;
-  
-        gallery.classList.remove('show');
-        setTimeout(() => {
-          gallery.innerHTML = '';
-          gallery.appendChild(img);
-          gallery.classList.add('show');
-        }, 200);
-  
-        lastLoaded = h3;
-        loaded = true;
+      if (nextImgPath && nextImgPath !== currentImgPath) {
+        const nextImg = document.createElement('img');
+        nextImg.src = nextImgPath;
+        nextImg.alt = nextEl.id;
+        nextImg.className = 'next-image';
+        gallery.appendChild(nextImg);
       }
-    });
+  
+      // force reflow to trigger animation
+      void gallery.offsetWidth;
+      gallery.classList.add('show');
+    }, 100);
   }
-
   function setupAudioSync() {
   const respondElements = document.querySelectorAll('[id^="respond-"]');
   let currentPlaying = null;
+
 
   respondElements.forEach(container => {
     const audio = container.querySelector("audio");
@@ -253,7 +276,6 @@ async function loadInterviewFromMarkdown(mdPath) {
           span.style.opacity=1;
         } else {
         //   span.style.color = "#999";
-          span.style.opacity=0.5;
           span.style.background = "none";
         }
       });
@@ -276,7 +298,7 @@ async function loadInterviewFromMarkdown(mdPath) {
 function resetHighlight(words) {
   words.forEach(span => {
     span.style.color = "black";
-    span.style.background = "transparent";
+    span.style.opacity=1;
   });
 }
 

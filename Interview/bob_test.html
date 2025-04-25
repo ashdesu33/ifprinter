@@ -3,6 +3,10 @@
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="interview.css">
+  <link rel="icon" type="image/png" href="../src/favicon.png" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lancelot&family=Libre+Barcode+128&display=swap" rel="stylesheet">
  </head>
  <body>
     <div id="checkerboard"></div>
@@ -10,19 +14,16 @@
   <div class="interview-info">
     <div class="interview-sub-title">Interview with Bob Nangle</div>
     <div class="interview-main-title">On Press: The Memory, Running Machine, and Meridian Printing</div>
-    <img src="bob_src/The-Journey.jpg" style="filter:grayscale(0.8)">
-    
+    <img src="bob_src/The-Journey.jpg" style="filter: brightness(1.1) blur(0.5px) url(#filter) sepia(0.6) hue-rotate(-20deg); ;">
+    <div class="interview-intro">
+        <i>
+            The most fantastic person in the world. The greatest parent. The greatest husband. I can't believe this person even existed. Let me introduce you to–
+        </i><p>
+I knew Bob from the Yearbook project that I’ve been working on with the Design Guild. As one of the owners of Meridian Printing, he has been working in the printing industry in RI for more than 20 years. With my curiosity toward how everything has started and changed, we started this conversation in the cozy reception room at Meridian Printing.
+
+        </p>
+    </div>
   </div> 
-  <svg xmlns="http://www.w3.org/2000/svg">
-    <filter id="filter">
-      <feComponentTransfer>
-        <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
-        <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
-        <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
-        <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
-      </feComponentTransfer>
-    </filter>
-</svg>
   <nav id="nav-section"></nav>
   <nav id="nav-page"></nav>
   
@@ -37,4 +38,14 @@
   loadInterviewFromMarkdown("bob.md");
 </script>
 </body>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="filter">
+      <feComponentTransfer>
+        <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
+      </feComponentTransfer>
+    </filter>
+</svg>
 </html>

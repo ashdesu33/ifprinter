@@ -13,8 +13,8 @@
 }
 @font-face {
     font-family: 'routed-gothic';
-    src: url('src/font/routed-gothic.ttf')format('truetype');
-    font-weight: normal;
+    src: url('src/cmuntb.ttf')format('truetype');
+    font-weight: bold;
     font-style: narrow;
 }
 @font-face {
@@ -30,7 +30,10 @@ body{
     background: #ececec;
     background-image: url(src/bg.png);
 }
-.answer ,.interview-main-title{
+.answer ,.interview-main-title,.interview-link{
+    filter: blur(0.5px) url(#filter);
+}
+.question p{
     filter: blur(0.5px) url(#filter);
 }
 .main{
@@ -75,14 +78,17 @@ section{
     font-family: "routed-gothic";
     font-size: 20px;
     line-height: 28px;
-    padding-bottom:3%;
-    background-color:#ececec;
+    margin-bottom:3%;
+    background-color:#fff388;
+    /* background-color: black;
+    color:white */
 }
 .answer{
     font-family: "authentic";
     font-size: 18px;
     line-height: 26px;
     padding-bottom:5%;
+    color: #5d5d5d;
 }
 
 .interview-info{
@@ -278,7 +284,7 @@ h3{
     .header p{
         margin: 2% 3% 0 3%;
         font-size: 30px;
-        background-color: aquamarine;
+        background-color:rgb(255, 255, 255);
     }
     #header-home{
         font-size: 35px;
@@ -367,6 +373,10 @@ h3{
         font-size: 16px;
         align-items: first baseline;
         padding-left:1rem;
+   
+    }
+    .nav-main{
+        background-color: #ececec;
     }
     .nav-spacer{
         padding-bottom:10%;
@@ -374,7 +384,10 @@ h3{
     button{
         border: none;
         font-size: 15px;
+        z-index: 100;
+        position: relative;
         color:rgb(106, 106, 106);
+        background-color: #ececec;
     }
     button:hover{
         background-color: aquamarine;
@@ -382,7 +395,7 @@ h3{
 
     h2{
         font-family: 'authentic';
-        /* background-color: aquamarine; */
+        background-color: rgb(255, 255, 255);
         font-size:18px;
         margin-bottom:0;
         padding-bottom:0;

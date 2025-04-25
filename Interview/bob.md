@@ -8,7 +8,7 @@
 
 **Audio:** bob_src/bob_1-1.wav
 
-**Image:** bob_src/The Journey.jpg
+**Image:** bob_src/The-Journey.jpg
 
 I'm Bob Nangle. So I'm one of the owners of Meridian Printing. We're a commercial printing company that specializes in sheet fed offset print. As for my personal background, I'm a Rhode Island person who grew up here, went to University of Rhode Island for college. My degree is more in finance and accounting. Out of school, I went to work for a printing company in Connecticut and they were doing what's called business forms. So it would be 3 pot forms, computer paper with the pin holes along the side, carbon paper that used to be, (well before your time) before carbonless paper. I was in that printing industry for a few years, and then I moved back to Rhode Island and eventually ended up coming to work here in Meridian Printing.
 
@@ -32,7 +32,7 @@ Overtime I felt that accounting was not really suited for me. I didn't like just
 
 **Audio:** bob_src/bob_1-2-2.wav
 
-**Image:** bob_src/To the Meridian Printing.jpg
+**Image:** bob_src/To-the-Meridian-Printing.jpg
 
 I was transferring from Connecticut to Missouri. So being with the big company, that's what happens. You're there for two years and they transferred me to Southeast Missouri into a different plant. So they had 13 printing companies throughout the US. So I went from Connecticut, to Kennett Missouri and I was there for a year and a half. And then I didn't like living in the mid-south. We talked about this for an hour, but I ended up meeting my wife down there. Moved back to Rhode Island, went into the food industry for a number of years. A coffee company.
 
@@ -46,7 +46,7 @@ When we first started here, an Irish company had just bought the company. They o
 
 **Audio:** bob_src/bob_1-2-3.wav
 
-**Image:** bob_src/To the Meridian Printing.jpg
+**Image:** bob_src/To-the-Meridian-Printing.jpg
 
 Those are called tuck-ins. So we've bought a couple of the smaller companies in Rhode Island. So you look at them and say they have $1,000,000 of sales, how do we get that $1,000,000 to transfer over to our company? What assets do we need to accommodate that and all the times you can do with the current hard assets that you have, but more importantly, what people do you need that you can bring over. So part of an acquisition is not just to take the sales, but possibly some of the working assets and some of the employees. So that's gonna help strengthen your company. And so the goal is can you move all of those sales over and successfully hold on to all of those sales over that following 1,3,5,10 year period.
 
@@ -62,7 +62,7 @@ But what's changed a lot in the printing industry is sales are getting more and 
 
 **Audio:** bob_src/bob_2-1.wav
 
-**Image:** bob_src/The Technology.jpg
+**Image:** bob_src/pre-press2.jpg
 
 The offset printing has not changed a lot from the technology standpoint. Offset printing 25 years ago versus today is similar, but the electronic side of offset printing is much better. So now you can look at a computer screen and you see the different color plateds. The speed of the presses is much greater. The registration of those presses today are greater than they were 25 years ago.
 
@@ -78,7 +78,7 @@ So you, the designer, took weeks of setting the files up versus today. You're do
 
 **Audio:** bob_src/bob_2-2.wav
 
-**Image:** bob_src/The Pre-Press.jpg
+**Image:** bob_src/The-Pre-Press.jpg
 
 We had a standalone pre-press company in Providence. So we imprint and owned Elite Color Group. So back in the 70s and 80s, color houses were all over the place doing all kinds of different color work for different industries and the printing industry being one of those. And so they were actually stripping film in those locations and getting it ready to make plates for printing companies. So they had multiple employees that were getting in files. They would actually take images of those files to make printed film and then strip that film to burn them. So it was very labor intensive and very, very time consuming.
 
@@ -91,8 +91,8 @@ We were able to build that Scitex out at like $750 an hour. So if you had things
 #### So it’s like the analog of analogs.
 
 **Audio:** bob_src/bob_2-2-2.wav
+**Image:** bob_src/color.JPG
 
-**Image:** bob_src/The Pre-Press.jpg
 
 Yes, so it was the very beginning stages of Photoshop and therefore it was very talented people who were doing this and therefore you could charge that kind of money. So the designer still designed everything, and the color house technician copied those layout from the designer. And then they type whatever the font was that that that designer designed the job in, then they would typeset using that font on a typeset machine to get it all things in there. But even before the typeset machine, you had lead type. So it would be the lead type that was being set on trays.
 
@@ -112,25 +112,14 @@ Or if you have an InDesign x that's way back, we may still have that InDesign x 
 
 **Audio:** bob_src/bob_2-3.wav
 
-**Image:** bob_src/The Printing Surface.jpg
+**Image:** bob_src/paper.JPG
+(need reediting audio)
 
 So every manufacturing company has a set of standards and so we have our own set of standards. So we're going to try to let our vendors know what our set of standards are and what our tolerance levels are. Over time and experience, you're going to pick the better vendors and get rid of the not so good vendors.
 
 Let's just take paper for example. 30 years ago, there were hundreds of papers around, so you could get very high quality. You can get very low.  So they graded paper as a #1 sheet, a #2 sheet, a #3 sheets and the #1 sheet was very good paper. However, they had certain tolerance levels that they had to work with. So they would meet certain tolerance levels. Then we would make sure when that paper came in that it met our standards of that tolerance level. Is it the right weight that we want? Is it the right shade? So those are all things that we would visually look at. If we get a piece of paper on press and it's not holding the ink or it's crumbling or the coating is falling off, we then would reject that paper. So if it's not meeting our quality standards, we then have to make a decision. Are we gonna keep this paper or reject the paper? If that vendor cannot get us replacement paper or that vendor continues to give us bad products, we're not gonna continue to work with that vendor. A good shop is gonna make sure that we're only as good as our suppliers are, and that suppliers are only as good as their suppliers are. At the end of the day, I can't come to you and say I can't print your yearbook this year because the paper guy didn't do this.
 
-There were a lot of changes in management styles and management philosophies over the last thirty years. So earlier there were management gurus out there that were talking about how to become a better company, how to get better controls in place, how to get better quality. And one of the quality things back in the day was you would always have someone on the floor doing quality control. One person would be pulling things off, inspecting it, and put them in this pile and put them in this pile. Put them in this pile and put them in this pile.
-
-Then someone came along and said, what are you doing? Well, I'm quality control.
-
-What does that mean? I take the bad pieces and put them over there. I take good pieces over there.
-
-And then somebody says, why are there bad pieces? And then you stop and think about it. Well, why? Why can you do it right here, but you can't do it right here? Then they started going back and looking at the process.
-
-Why you, the operator, why can't you do better than that? And then they started training the operators again. So you were producing 1% waste. You were producing 7% waste. The company had a tolerance level of 10% waste. Why does it have to be 10%? Can it be 9%? Can it be 8%? Can it be 7%? Can it be 0%? And so that became a management style, a management philosophy still to this day, my expectation is zero defects. That's my expectation.
-
-If you don't have that as an expectation, then you're already falling short. If you say all we have to do is get close enough, then you've fallen short.  People say, well, it's close enough. That's fine. You're going for brain surgery. I'm gonna get you a doctor that's gonna be close enough, and you're okay with that. Right? You know, you're booking a flight tomorrow. I'm gonna get you on a plane that you'll get there close enough. Don't worry about it.
-
-No.I wanna make sure I'm gonna get there. So the mindset has to be, I want it to be perfect, because if you go into something already thinking, I'm gonna go to work today, and I'm only gonna produce 90% good stuff. You say to the kids and they say, see, dad, go produce 90% good stuff, 10% shit. That's how management evolved over time, and how companies became more strengthened in all of the manufacturing process to get it better and better and better. So having good suppliers, good equipment, and good employees is what makes manufacturing companies good, and you can't be good without all three of those working.
+ So the mindset has to be, I want it to be perfect, because if you go into something already thinking, I'm gonna go to work today, and I'm only gonna produce 90% good stuff. You say to the kids and they say, see, dad, go produce 90% good stuff, 10% shit. That's how management evolved over time, and how companies became more strengthened in all of the manufacturing process to get it better and better and better. So having good suppliers, good equipment, and good employees is what makes manufacturing companies good, and you can't be good without all three of those working.
 
 ---
 
@@ -138,7 +127,8 @@ No.I wanna make sure I'm gonna get there. So the mindset has to be, I want it to
 
 **Audio:** bob_src/bob_2-4-3.wav
 
-**Image:** bob_src/The Printing Surface.jpg
+**Image:** bob_src/zine-11.jpg
+
 
 Paper is probably the largest expense a printer has on a particular job. Picking the right paper that's gonna hold the ink well and give you the best result is what we all work for.
 
@@ -157,8 +147,7 @@ We started buying recently container loads of paper from Italy. They don't stock
 #### I know we have talked about it a little, where the paper supplier got a lot less because of the pandemic, and how we are now experiencing a huge shift in our printing culture. Instead of physical printing, we are leaning more towards digital screens which are less expensive. As someone who worked in commercial printing for the past 25 years, would you describe the price for printing becoming more expensive/inaccessible in the past twenty years?
 
 **Audio:** bob_src/bob_2-4-1.wav
-
-**Image:** bob_src/The Expensive Print?.jpg
+**Image:** bob_src/zine-14.jpg
 
 So the price of printing has gotten less and less expensive, and the reason it's gotten less and less expensive is the consumer is wanting to pay less and less for what they want.
 
@@ -170,7 +159,7 @@ We're down here. The designers are up here, saying “No. We want the best.” B
 
 **Audio:** bob_src/bob_2-4-2.wav
 
-**Image:** bob_src/The Expensive Print?.jpg
+**Image:** bob_src/13.jpg
 
 So how does Meridian now compete? Meridian now has to drop down the grade of paper. How does that paper merchant survive? They have to start making cheaper paper, and cheaper paper, and cheaper paper. And so it's driven the price down. It's driven the price down. It's driven the price down. Thirty years ago, you bought a refrigerator. It lasted you thirty years. Today, you buy a refrigerator, it lasts you three or five years. We already have a planned disposal. Things built today don't last, so it keeps the market going to get another piece. Printing is one of those things. Consumers are wanting to pay less and less and less, but we have certain fixed costs to get there.
 
@@ -192,7 +181,7 @@ It continues that way, and we as consumers all sometimes buy a price and sometim
 
 **Audio:** bob_src/bob_3-2-2.wav
 
-**Image:** bob_src/The Far Away Factories.jpg
+**Image:** bob_src/18.jpg
 
 When I was a kid growing up, I could go to local hardware store, and I could find anything I wanted in that local hardware store. It didn't matter what it was. Then what happened? Home Depot came.Home Depot was the greatest thing in town because that was a huge place, and they carry 10 times more product.
 
@@ -206,7 +195,7 @@ So we gave up the local mom and pop shops and go to the big box. Now we're going
 
 **Audio:** bob_src/bob_3-2-3.wav
 
-**Image:** bob_src/The Far Away Factories.jpg
+**Image:** bob_src/20.jpg
 
 We're pushing pricing lower and lower. The only way they can get that washing machine on sale that you can buy through Amazon, it has to be made offshore somewhere. Because we, living in this country, wanna make a certain wage. We need to make a certain wage to survive.
 
