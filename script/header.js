@@ -1,7 +1,7 @@
 let header = "";
 const headerContainer= document.querySelector('.header').innerHTML;
 header = `
-    <p id="header-home" onclick="home()">if every man is a printer</p>
+    <p id="header-home" onclick="home()">If every body is a printer</p>
     <p id="header-directory"> about </p>
 `
 document.querySelector('.header').innerHTML = header;
@@ -73,3 +73,32 @@ function createIndex(){
 window.onload = createCheckerboard;
 window.onresize = createCheckerboard;
 createIndex();
+
+function smoothLoad(){
+barba.init({
+    transitions: [{
+      async leave({ current }) {
+        console.log("hello");
+        current.container.classList.add('page-transition-leave');
+        await new Promise(resolve => {
+          current.container.classList.add('page-transition-leave-active');
+          setTimeout(resolve, 800); // Match transition duration
+        });
+      },
+      async enter({ next }) {
+        next.container.classList.add('page-transition-enter');
+        await new Promise(resolve => requestAnimationFrame(() => {
+          next.container.classList.add('page-transition-enter-active');
+          setTimeout(resolve, 800);
+        }));
+      },
+      async once({ next }) {
+        next.container.classList.add('page-transition-enter');
+        await new Promise(resolve => requestAnimationFrame(() => {
+          next.container.classList.add('page-transition-enter-active');
+          setTimeout(resolve, 800);
+        }));
+      }
+    }]
+  });
+}

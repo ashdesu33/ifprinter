@@ -1,0 +1,56 @@
+body{
+    background-color: pink;
+    background-image: url(concrete-wall-1920x1080.png);
+}
+/* .interview {
+    padding: 20px;
+  } */
+  .question{
+    background-color: #a1f7ff;
+  }
+  .answer{
+    padding-left: 5%;
+  }
+
+  
+  .dropzone {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .qa-card {
+    padding: 10px;
+    width: 20%;
+    position: relative;
+    transition: box-shadow 0.2s ease;
+  }
+  .qa-card:hover{
+    cursor: grab;
+  }
+  
+  .qa-header {
+    background: #eee;
+    padding: 10px;
+    font-weight: bold;
+    cursor: grab;
+  }
+  
+  .qa-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .qa-card.expanded .qa-body {
+    max-height: 2000px;
+    padding-top: 10px;
+    background-color: #eee;
+  }
+
+  .answer{
+    padding-left: 6%;
+  }
+  .interview-gallery{
+    filter:contrast(0.7) brightness(1.5) sepia(0.2);
+  }
