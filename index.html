@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-16">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>if every man is a printer</title>
     <link rel="icon" type="image/png" href="src/favicon.png" >
@@ -13,16 +13,7 @@
         <div data-barba="container">
             <div id="checkerboard"></div>
             <div class="header"></div>
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <filter id="filter">
-                <feComponentTransfer>
-                    <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
-                    <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
-                    <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
-                    <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
-                </feComponentTransfer>
-                </filter>
-            </svg>
+        
             <div class="main">
                 <section>
                     <h2>THE SURFACE</h2>   
@@ -46,19 +37,21 @@
                 </section>
                 <section>
                 <h2>THE PRESS</h2>
-                
+            
                 <div class="interview-link">
+                    <a href="Interview/bob_test.html">
+                        <p class="link-sub-title">Interview with Bob Nangle</p>
+                        <p class="link-main-title">
+                        On Press: Memory, Running Machine, and Meridian Printing</p>
+                        <img src="/Interview/bob_src/cover.png">
+                    </a>
                     <a href="Interview/lois.html">
                         <p class="link-sub-title">Interview with Lois Harada</p>
                         <p class="link-main-title">
                             Nothing is Replaceable
                         </p>
+                        <img src="/Interview/lois_src/tets.png">
                     </a>
-                <a href="Interview/bob_test.html">
-                    <p class="link-sub-title">Interview with Bob Nangle</p>
-                    <p class="link-main-title">
-                    On Press: Memory, Running Machine, and Meridian Printing</p>
-                </a>
                 </div>
                 </section>
                 <section>
@@ -67,18 +60,20 @@
                     <a href="">
                         <p class="link-sub-title">Interview with josé r. menéndez</p>
                         <p class="link-main-title">
-                        To be Present to the Space: a Responsive Design</p>
+                        The Responsive Print: Small Print, Small Place, but Nothing is Small</p>
+                        <img src="/Interview/julia/IMG_7775.png">
                     </a>
                     <a href="">
                         <p class="link-sub-title">Interview with Julia Gualtieri</p>
                         <p class="link-main-title">
                         The Everyday Print</p>
+                        
                     </a>
                 </div>
                 </section>
             </div>
 
-            <div class="index-dataset"></div>
+            <!-- <div class="index-dataset"></div>
             <div class="content-dataset">
                 <div class="notes">
                     <h3>About Weekly Logs</h3>
@@ -92,7 +87,17 @@
                     <div style="width: 33%; background-color: #f884e8;"></div>
                     <div style="width: 33%; background-color: #ffff8f;"></div> 
                 </div>
-            </div>
+            </div> -->
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <filter id="filter">
+                <feComponentTransfer>
+                    <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
+                    <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
+                    <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
+                    <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
+                </feComponentTransfer>
+                </filter>
+            </svg>
         </div>
     </div>
 

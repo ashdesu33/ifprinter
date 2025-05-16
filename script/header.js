@@ -10,8 +10,10 @@ document.querySelector('.header').innerHTML = header;
 function createCheckerboard() {
     const container = document.getElementById("checkerboard");
     container.innerHTML = ""; 
-
-    const unitSize = window.innerWidth / 60; 
+    const unitSize = window.innerWidth / 30; 
+    if(window.innerWidth>700){
+      unitSize = window.innerWidth / 60; 
+    }
     const numUnits = Math.ceil(window.innerWidth / unitSize);
 
     for (let i = 0; i < numUnits; i++) {
