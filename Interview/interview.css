@@ -139,13 +139,13 @@
   
     .interview-gallery img {
       position: absolute;
-      width: 100%;
+      width: 80%;
       height: 25%;
       object-fit: cover;
       top: 60%;
       left: 0;
       background-color: rgb(209, 209, 209);
-      padding:5%;
+      padding:10%;
       padding-bottom: 30%;
       border-top: none;
       opacity: 0;
