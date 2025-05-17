@@ -111,7 +111,7 @@ barba.init({
 const thankyou = document.querySelector('.to-the-dearest');
 console.log(thankyou);
 if (thankyou!=null) {
-  fetch('../src/thankyou.md')
+  fetch('src/thankyou.md')
     .then(res => res.text())
     .then(markdownContent => {
       thankyou.innerHTML = marked.parse(markdownContent);
