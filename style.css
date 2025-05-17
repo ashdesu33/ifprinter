@@ -163,7 +163,7 @@
   
   .interview-main-title {
     font-family: 'authentic';
-    font-size: 50px;
+    font-size: 30px;
     padding-bottom: 5%;
   }
   
@@ -433,6 +433,9 @@
     .interview-link img{
         width: 50%;
       }
+    .interview-main-title{
+      font-size: 50px;
+    }
   
     .interview-info img {
       width: 100%;

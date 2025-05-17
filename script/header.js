@@ -31,7 +31,7 @@ function createCheckerboard() {
 }
 
 function home(){
-    window.location.href = '/';
+  window.location.href = window.location.origin + window.location.pathname.split('/').slice(0, 2).join('/') + '/';
 }
 
 

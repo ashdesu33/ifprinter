@@ -10,6 +10,32 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
+    <svg style="display: none; margin:0; padding:0;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+        <filter id="filter">
+        <feComponentTransfer>
+            <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
+            <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
+            <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
+            <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
+        </feComponentTransfer>
+        </filter>
+         </defs>
+    </svg>
+    <svg style="display: none; margin:0; padding:0;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+        <filter id="displacementFilter">
+          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="1" result="turbulence"/>
+          <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+          <feComponentTransfer>
+            <feFuncR type="discrete" tableValues="0 1 1" />
+            <feFuncG type="discrete" tableValues="0 1 1" />
+            <feFuncB type="discrete" tableValues="0 1 1" />
+            <feFuncA type="discrete" tableValues="0 1 1" />
+          </feComponentTransfer>
+        </filter>
+        </defs>
+    </svg>
     <div data-barba="wrapper">
         <div data-barba="container">
             <div id="checkerboard"></div>
@@ -95,28 +121,6 @@
                     <div style="width: 33%; background-color: #ffff8f;"></div> 
                 </div>
             </div> -->
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <filter id="filter">
-                <feComponentTransfer>
-                    <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
-                    <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
-                    <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
-                    <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
-                </feComponentTransfer>
-                </filter>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                <filter id="displacementFilter">
-                  <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="1" result="turbulence"/>
-                  <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
-                  <feComponentTransfer>
-                    <feFuncR type="discrete" tableValues="0 1 1" />
-                    <feFuncG type="discrete" tableValues="0 1 1" />
-                    <feFuncB type="discrete" tableValues="0 1 1" />
-                    <feFuncA type="discrete" tableValues="0 1 1" />
-                  </feComponentTransfer>
-                </filter>
-              </svg>
               
         </div>
         
