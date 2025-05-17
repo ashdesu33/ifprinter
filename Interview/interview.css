@@ -21,7 +21,7 @@
   }
 
 .interview h2{
-    background-color: #88d4f8;
+    background-color: #c4ecff;
     color:black;
 }
 .interview h3{
@@ -47,7 +47,7 @@
     margin-bottom: 0;
   }
   .interview h3{
-    background-color:rgb(255, 127, 232);
+    background-color:rgb(255, 200, 245);
     margin-top:0;
   }
   .question,h2,h3{
@@ -67,17 +67,20 @@
 
   .interview-gallery {
     position: fixed;
-    top: 20%;
-    left: 10%;
-    width: 40%;
+    top: 10%;
+    left: 0%;
+    width: 50%;
     pointer-events: none;
     z-index: -10;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease, transform 0.5s ease;
+    transform: translateY(100px);
   }
   
   .interview-gallery.show {
     opacity: 1;
+    transform: translateY(0px);
+
   }
   
   .interview-gallery img {
@@ -88,12 +91,14 @@
     top: 0;
     left: 0;
     transition: 
-      opacity 0.6s ease,
-      transform 0.6s ease,
-      filter 0.4s ease;
+      opacity 1s ease,
+      transform 1s ease,
+      filter 1s ease;
     will-change: opacity, transform, filter;
     pointer-events: none;
     z-index: -10;
+
+    mix-blend-mode: darken;
   }
 
   
@@ -135,12 +140,13 @@
     .interview-gallery img {
       position: absolute;
       width: 80%;
-      height: 35%;
+      height: 25%;
       object-fit: cover;
       top: 60%;
       left: 0;
-      background-color: black;
+      background-color: rgb(209, 209, 209);
       padding:5%;
+      padding-bottom: 30%;
       border-top: none;
       opacity: 0;
       transition: 

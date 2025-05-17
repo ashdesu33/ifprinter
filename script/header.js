@@ -10,10 +10,13 @@ document.querySelector('.header').innerHTML = header;
 function createCheckerboard() {
     const container = document.getElementById("checkerboard");
     container.innerHTML = ""; 
-    const unitSize = window.innerWidth / 30; 
+    var unitSize = window.innerWidth / 30; 
     if(window.innerWidth>700){
       unitSize = window.innerWidth / 60; 
+      console.log(unitSize);
     }
+
+
     const numUnits = Math.ceil(window.innerWidth / unitSize);
 
     for (let i = 0; i < numUnits; i++) {
@@ -32,49 +35,49 @@ function home(){
 }
 
 
-function createIndex(){
-    const container = document.querySelector(".index-dataset");
-    container.innerHTML = ""; 
-    const cmykColors = ["#00FFFF", "#FF00FF", "#FFFF00", "#000000"];
+// function createIndex(){
+//     const container = document.querySelector(".index-dataset");
+//     container.innerHTML = ""; 
+//     const cmykColors = ["#00FFFF", "#FF00FF", "#FFFF00", "#000000"];
 
-    const unitSize = Math.min(window.innerWidth * 0.12,80); 
-    const title = document.createElement("div");
-    title.classList.add("index-logtitle");
-    title.innerHTML='WEEKLY \n LOG'
-    container.appendChild(title);
+//     const unitSize = Math.min(window.innerWidth * 0.12,80); 
+//     const title = document.createElement("div");
+//     title.classList.add("index-logtitle");
+//     title.innerHTML='WEEKLY \n LOG'
+//     container.appendChild(title);
 
-    const index_container = document.createElement("div");
-    index_container.classList.add("index-button-container");
-
-
-    for (let i = 0; i < 10; i++) {
-        const unit = document.createElement("button");
-        unit.onclick = () => window[`week${i+1}`]();
-        unit.innerHTML = `${i+1}`;
-        unit.classList.add("index-button");
-        unit.style.width = `${unitSize}px`;
-        unit.style.height = `${unitSize}px`;
-        unit.style.paddingLeft = `5px`;
-        unit.style.border = 'solid 1px rgb(63, 63, 69)'
+//     const index_container = document.createElement("div");
+//     index_container.classList.add("index-button-container");
 
 
-        const colorBar = document.createElement("div");
-        colorBar.style.width = "${unitSize}px";
-        colorBar.style.height = "5px";
-        colorBar.style.backgroundColor = cmykColors[i%4];
-        colorBar.style.marginTop = "5px";
+//     for (let i = 0; i < 10; i++) {
+//         const unit = document.createElement("button");
+//         unit.onclick = () => window[`week${i+1}`]();
+//         unit.innerHTML = `${i+1}`;
+//         unit.classList.add("index-button");
+//         unit.style.width = `${unitSize}px`;
+//         unit.style.height = `${unitSize}px`;
+//         unit.style.paddingLeft = `5px`;
+//         unit.style.border = 'solid 1px rgb(63, 63, 69)'
 
 
-        unit.appendChild(colorBar);
-        index_container.appendChild(unit);
+//         const colorBar = document.createElement("div");
+//         colorBar.style.width = "${unitSize}px";
+//         colorBar.style.height = "5px";
+//         colorBar.style.backgroundColor = cmykColors[i%4];
+//         colorBar.style.marginTop = "5px";
+
+
+//         unit.appendChild(colorBar);
+//         index_container.appendChild(unit);
         
-    }
-    container.appendChild(index_container);
-}
+//     }
+//     container.appendChild(index_container);
+// }
 
 window.onload = createCheckerboard;
 window.onresize = createCheckerboard;
-createIndex();
+// createIndex();
 
 function smoothLoad(){
 barba.init({
@@ -103,4 +106,18 @@ barba.init({
       }
     }]
   });
+}
+
+const thankyou = document.querySelector('.to-the-dearest');
+console.log(thankyou);
+if (thankyou!=null) {
+  fetch('../src/thankyou.md')
+    .then(res => res.text())
+    .then(markdownContent => {
+      thankyou.innerHTML = marked.parse(markdownContent);
+    })
+    .catch(err => {
+      console.error('Failed to load markdown:', err);
+      thankyou.innerHTML = '<p>Could not load thank you note.</p>';
+    });
 }

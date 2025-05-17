@@ -9,7 +9,7 @@ body{
     background-color: #a1f7ff;
   }
   .answer{
-    padding-left: 5%;
+    padding-left: 15%;
   }
 
   
@@ -48,9 +48,6 @@ body{
     background-color: #eee;
   }
 
-  .answer{
-    padding-left: 6%;
-  }
   .interview-gallery{
     filter:contrast(0.7) brightness(1.5) sepia(0.2);
   }

@@ -6,7 +6,7 @@
 
 **Audio:** bob_src/bob_1-1.wav
 
-**Image:** bob_src/The-Journey.jpg
+**Image:** bob_src/1-1.png
 
 I'm Bob Nangle. So I'm one of the owners of Meridian Printing. We're a commercial printing company that specializes in sheet fed offset print. As for my personal background, I'm a Rhode Island person who grew up here, went to University of Rhode Island for college. My degree is more in finance and accounting. Out of school, I went to work for a printing company in Connecticut and they were doing what's called business forms. So it would be 3 pot forms, computer paper with the pin holes along the side, carbon paper that used to be, (well before your time) before carbonless paper. I was in that printing industry for a few years, and then I moved back to Rhode Island and eventually ended up coming to work here in Meridian Printing.
 
@@ -20,7 +20,7 @@ Over time I evolved from being in the accounting side to being in the operation 
 
 **Audio:** bob_src/bob_1-2-1.wav
 
-**Image:** bob_src/To the Meridian Printing.jpg
+**Image:** bob_src/1-2-1.png
 
 Inevitably, 90% of kids who go to college don't end up in the field that they think they're going to end up in. So you have graphic design today, you could be a bus driver tomorrow. You evolve into something, fall into something. So a lot of people just evolve, and will fall into something. So because my degree was accounting, moving right out of school, I went to work as a staff accountant at a printing company in Connecticut.
 
@@ -29,8 +29,8 @@ Overtime I felt that accounting was not really suited for me. I didn't like just
 ---
 
 **Audio:** bob_src/bob1-2-2.wav
+**Image:** bob_src/1-2-1.png
 
-**Image:** bob_src/To-the-Meridian-Printing.jpg
 
 I was transferring from Connecticut to Missouri. So being with the big company, that's what happens. You're there for two years and they transferred me to Southeast Missouri into a different plant. They had 13 printing companies throughout the US. So I went from Connecticut, to Kennett Missouri and I was there for a year and a half. And then I didn't like living in the mid-south, but I ended up meeting my wife down there. Moved back to Rhode Island, went into the food industry for a number of years. A coffee company.
 
@@ -49,7 +49,7 @@ When we first started here, an Irish company had just bought the company. They o
 
 **Audio:** bob_src/bob_2-1.wav
 
-**Image:** bob_src/pre-press2.jpg
+**Image:** bob_src/1-2-2-2.png
 
 The offset printing has not changed a lot from the technology standpoint. Offset printing 25 years ago versus today is similar, but the electronic side of offset printing is much better. So now you can look at a computer screen and you see the different color plates. The speed of the presses is much greater. The registration of those presses today are greater than they were 25 years ago.
 
@@ -65,7 +65,7 @@ So you, the designer, took weeks of setting the files up versus today. You're do
 
 **Audio:** bob_src/bob_2-2.wav
 
-**Image:** bob_src/The-Pre-Press.jpg
+**Image:** bob_src/2-3.png
 
 We had a standalone pre-press company in Providence. So we imprint and own Elite Color Group. So back in the 70s and 80s, color houses were all over the place doing all kinds of different color work for different industries and the printing industry being one of those. And so they were actually stripping film in those locations and getting it ready to make plates for printing companies. So they had multiple employees that were getting in files. They would actually take images of those files to make printed film and then strip that film to burn them. So it was very labor intensive and very, very time consuming.
 
@@ -78,7 +78,7 @@ We were able to build that Scitex out at like $750 an hour. So if you had things
 #### So it’s like the analog of analogs.
 
 **Audio:** bob_src/bob_2-2-2.wav
-**Image:** bob_src/color.JPG
+**Image:** bob_src/2-4-1.png
 
 
 Yes, so it was the very beginning stages of Photoshop and therefore it was very talented people who were doing this and therefore you could charge that kind of money. So the designer still designed everything, and the color house technician copied those layout from the designer. And then they type whatever the font was that that that designer designed the job in, then they would typeset using that font on a typeset machine to get it all things in there. But even before the typeset machine, you had lead type. So it would be the lead type that was being set on trays.
@@ -99,7 +99,7 @@ Or if you have an InDesign x that's way back, we may still have that InDesign x 
 
 **Audio:** bob_src/bob_2-3.wav
 
-**Image:** bob_src/paper.JPG
+**Image:** bob_src/2-4-2.png
 
 
 So every manufacturing company has a set of standards and we have our own set of standards. We're going to try to let our vendors know what our set of standards are and what our tolerance levels are. Over time and experience, you're going to pick the better vendors and get rid of the not so good vendors.
@@ -119,7 +119,7 @@ The mindset has to be, I want it to be perfect, because if you go into something
 #### I learned that a lot of press now is sourcing their printing material outside of the US. We are also experiencing a huge shift in our printing culture. Instead of physical printing, we are leaning more towards digital screens which are less expensive. As someone who worked in commercial printing for the past 25 years, would you describe the price for printing becoming more expensive/inaccessible in the past twenty years?
 
 **Audio:** bob_src/bob_2-4-1.wav
-**Image:** bob_src/zine-14.jpg
+**Image:** bob_src/1-2-2.png
 
 So the price of printing has gotten less and less expensive, and the reason it's gotten less and less expensive is the consumer is wanting to pay less and less for what they want.
 
@@ -131,7 +131,7 @@ We're down here. The designers are up here, saying “No. We want the best.” T
 
 **Audio:** bob_src/bob_2-4-2.wav
 
-**Image:** bob_src/13.jpg
+**Image:** bob_src/1-2-2.png
 
 So how does Meridian now compete? Meridian now has to drop down the grade of paper. How does that paper merchant survive? They have to start making cheaper paper, and cheaper paper, and cheaper paper. And so it's driven the price down. It's driven the price down. It's driven the price down. Thirty years ago, you bought a refrigerator. It lasted you thirty years. Today, you buy a refrigerator, it lasts you three or five years. We already have a planned disposal. Things built today don't last, so it keeps the market going to get another piece. Printing is one of those things. Consumers are wanting to pay less and less and less, but we have certain fixed costs to get there.
 
@@ -147,7 +147,7 @@ It continues that way, and we as consumers all sometimes buy a price and sometim
 
 **Audio:** bob_src/bob_3-2-1.wav
 
-**Image:** bob_src/The Far Away Factories.jpg
+**Image:** bob_src/2-4-3.png
 
 Yes. We have to work with all of those materials that either help us or hurt us. We still make the project look good but also be able to compete with everybody else. So we have to get it to a price level that everybody says, okay. That's competitive. 
 
@@ -160,7 +160,7 @@ What's happening is we, Americans, are squeezing the pricing. We want everything
 
 **Audio:** bob_src/bob_3-2-2.wav
 
-**Image:** bob_src/18.jpg
+**Image:** bob_src/2-4-4.png
 
 When I was a kid growing up, I could go to the local hardware store, and I could find anything I wanted in that local hardware store. It didn't matter what it was. Then what happened? Home Depot came.Home Depot was the greatest thing in town because that was a huge place, and they carry 10 times more product.
 
@@ -172,6 +172,7 @@ So we gave up the local mom and pop shops and went to the big box. Now we're goi
 
 ---
 **Audio:** bob_src/bob_3-2-3.wav
+**Image:** bob_src/2-4-5.png
 We're pushing pricing lower and lower. The only way they can get that washing machine on sale that you can buy through Amazon, it has to be made offshore somewhere. Because we, living in this country, wanna make a certain wage. We need to make a certain wage to survive. 
 Our housing pricing here is here.Our food pricing here is here. 
 
@@ -186,6 +187,7 @@ America is becoming more of a service industry, like graphic designers, than a m
 #### How would you, as the owner of Meridian Printing, deal with all the changes and circumstances we have right now?
 
 **Audio:** bob_src/bob_4-1-1.wav
+
 
 So remember I told you we're probably not gonna print your yearbook in this location. We're gonna print it at one of our locations. A week and a half ago, we sold Meridian Printing. So I'm not the owner of Meridian Printing. 
 

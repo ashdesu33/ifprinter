@@ -1,0 +1,49 @@
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="interview.css">
+  <link rel="stylesheet" href="lois_src/lois_style.css">
+  <link rel="icon" type="image/png" href="../src/favicon.png" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lancelot&family=Libre+Barcode+128&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+ </head>
+ <body>
+    <div id="checkerboard"></div>
+    <div class="header"></div>
+  <div class="interview-info">
+    <div class="interview-sub-title">Interview with Lois Harada</div>
+    <div class="interview-main-title">Nothing is Replaceable</div>
+    <img src="lois_src/cover.png" style="filter: brightness(1.1) blur(0.5px) url(#filter) sepia(0.6) hue-rotate(-20deg);">
+    <div class="interview-intro">
+    </div>
+  </div> 
+  <nav id="nav-section"></nav>
+  <nav id="nav-page"></nav>
+  <div class="interview-gallery"></div>
+  <article class="interview">
+  </article>  
+  <script src="../script/header.js"></script>
+  <!-- <script src="navigation.js"></script> -->
+  <script src="bob_src/bob.js"></script>
+<script src="interview.js"></script>
+<script src="lois_src/lois_interaction.js"></script>
+<script>
+        loadInterviewFromMarkdown("julia_src/julia.md");
+       initializeInteractions()   
+</script>
+</body>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="filter">
+      <feComponentTransfer>
+        <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
+      </feComponentTransfer>
+    </filter>
+</svg>
+</html>

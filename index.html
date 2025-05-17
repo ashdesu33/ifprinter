@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div data-barba="wrapper">
         <div data-barba="container">
             <div id="checkerboard"></div>
-            <div class="header"></div>
-        
+            <div class="homepage">
+            <div class="thankyou">
+                <div class="to-the-dearest">
+                    
+                </div>
+            </div>
             <div class="main">
+                <div class="header"></div>
                 <section>
                     <h2>THE SURFACE</h2>   
                     <div class="interview-link">
@@ -61,7 +67,7 @@
                         <p class="link-sub-title">Interview with josé r. menéndez</p>
                         <p class="link-main-title">
                         The Responsive Print: Small Print, Small Place, but Nothing is Small</p>
-                        <img src="/Interview/julia/IMG_7775.png">
+                        <img src="/Interview/julia_src/IMG_7775.png">
                     </a>
                     <a href="">
                         <p class="link-sub-title">Interview with Julia Gualtieri</p>
@@ -72,6 +78,7 @@
                 </div>
                 </section>
             </div>
+        </div>
 
             <!-- <div class="index-dataset"></div>
             <div class="content-dataset">
@@ -98,7 +105,21 @@
                 </feComponentTransfer>
                 </filter>
             </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <filter id="displacementFilter">
+                  <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="1" result="turbulence"/>
+                  <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+                  <feComponentTransfer>
+                    <feFuncR type="discrete" tableValues="0 1 1" />
+                    <feFuncG type="discrete" tableValues="0 1 1" />
+                    <feFuncB type="discrete" tableValues="0 1 1" />
+                    <feFuncA type="discrete" tableValues="0 1 1" />
+                  </feComponentTransfer>
+                </filter>
+              </svg>
+              
         </div>
+        
     </div>
 
 
