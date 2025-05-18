@@ -1,113 +1,196 @@
 async function loadInterviewFromMarkdown(mdPath) {
-    const response = await fetch(mdPath);
-    const text = await response.text();
-    const lines = text.split('\n');
-  
-    const container = document.querySelector('.interview');
-    let currentSection = null;
-    let currentSubsection = null;
-    let question = '', audio = '', image = '', answers = [];
-    let lastQuestion = '', respondId = 1;
-    const respondImageMap = {};
-  
-    function flushEntry() {
-        if (answers.length === 0) {
-          // If no answers, nothing to flush
-          audio = '';
-          image = '';
-          return;
-        }
-      
-        const div = document.createElement('div');
-        div.id = `respond-${respondId}`;
-      
-        // Always create a timestamp div
-        const timestamp = document.createElement('div');
-        timestamp.className = 'timestamp';
-        div.appendChild(timestamp);
-      
-        // Only create an audio element if there is an audio source
-        if (audio) {
-          const audioEl = document.createElement('audio');
-          audioEl.src = audio;
-          audioEl.setAttribute('preload', 'auto');
-          div.appendChild(audioEl);
-        }
-      
-        if (question && question !== lastQuestion) {
-          const q_container = document.createElement('div');
-          const q = document.createElement('p');
-          q_container.className = 'question';
-          q.innerText = question;
-          q_container.appendChild(q);
-          if (currentSubsection) currentSubsection.appendChild(q_container);
-          lastQuestion = question;
-        }
-      
-        answers.forEach(ans => {
-          const p = document.createElement('p');
-          p.className = 'answer';
-          p.innerHTML = `<span>${ans}</span>`;
-          div.appendChild(p);
-        });
-      
-        if (currentSubsection) currentSubsection.appendChild(div);
-      
-        if (image) {
-          respondImageMap[div.id] = image;
-        }
-      
-        // Reset
-        audio = '';
-        image = '';
-        answers = [];
-        respondId++;
-      }
-      for (let line of lines) {
-        line = line.trim();
-        if (line.startsWith('## ')) {
-          flushEntry();
-          currentSection = document.createElement('section');
-          const title = line.substring(3);
-          currentSection.id = title;
-          const h2 = document.createElement('h2');
-          h2.innerText = title;
-          currentSection.appendChild(h2);
-          container.appendChild(currentSection);
-        } else if (line.startsWith('### ')) {
-          flushEntry();
-          const subtitle = line.substring(4);
-          currentSubsection = document.createElement('div');
-          const h3 = document.createElement('h3');
-          h3.id = subtitle.replace(/\s+/g, '-');
-          h3.innerText = subtitle;
-          currentSubsection.appendChild(h3);
-          if (currentSection) currentSection.appendChild(currentSubsection);
-          lastQuestion = '';
-        } else if (line.startsWith('**Audio:**')) {
-          audio = line.split('**Audio:**')[1].trim();
-        } else if (line.startsWith('**Image:**')) {
-          image = line.split('**Image:**')[1].trim();
-        } else if (line.startsWith('#### ')) {
-          flushEntry();
-          question = line.substring(5);
-        } else if (line === '---') {
-          flushEntry();
-        } else if (line.length > 0 && line !== '___') {
-          answers.push(line);
-        }
-      }
-      flushEntry();
-      window.respondImageMap = respondImageMap;
-      initializeInteractions();
+  const response = await fetch(mdPath);
+  const text = await response.text();
+  const lines = text.split('\n');
+
+  const container = document.querySelector('.interview');
+  let currentSection = null;
+  let currentSubsection = null;
+  let question = '', audio = '', image = '', answers = [];
+  let lastQuestion = '', respondId = 1;
+  const respondImageMap = {};
+
+  function flushEntry() {
+    if (answers.length === 0) {
+      audio = '';
+      image = '';
+      return;
     }
-  
+
+    const div = document.createElement('div');
+    div.id = `respond-${respondId}`;
+
+    const timestamp = document.createElement('div');
+    timestamp.className = 'timestamp';
+    div.appendChild(timestamp);
+
+    if (audio) {
+      const audioEl = document.createElement('audio');
+      audioEl.src = audio;
+      audioEl.setAttribute('preload', 'auto');
+      div.appendChild(audioEl);
+    }
+
+    if (question && question !== lastQuestion) {
+      const q_container = document.createElement('div');
+      const q = document.createElement('p');
+      q_container.className = 'question';
+      q.innerText = question;
+      q_container.appendChild(q);
+      if (currentSubsection) currentSubsection.appendChild(q_container);
+      lastQuestion = question;
+    }
+
+    answers.forEach(ans => {
+      const p = document.createElement('p');
+      p.className = 'answer';
+      p.innerHTML = `<span>${ans}</span>`;
+      div.appendChild(p);
+    });
+
+    if (currentSubsection) currentSubsection.appendChild(div);
+
+    if (image) {
+      const webpPath = image.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+      respondImageMap[div.id] = webpPath;
+      respondImageMap[div.id + '-fallback'] = image;
+    }
+
+    audio = '';
+    image = '';
+    answers = [];
+    respondId++;
+  }
+
+  for (let line of lines) {
+    line = line.trim();
+    if (line.startsWith('## ')) {
+      flushEntry();
+      currentSection = document.createElement('section');
+      const title = line.substring(3);
+      currentSection.id = title;
+      const h2 = document.createElement('h2');
+      h2.innerText = title;
+      currentSection.appendChild(h2);
+      container.appendChild(currentSection);
+    } else if (line.startsWith('### ')) {
+      flushEntry();
+      const subtitle = line.substring(4);
+      currentSubsection = document.createElement('div');
+      const h3 = document.createElement('h3');
+      h3.id = subtitle.replace(/\s+/g, '-');
+      h3.innerText = subtitle;
+      currentSubsection.appendChild(h3);
+      if (currentSection) currentSection.appendChild(currentSubsection);
+      lastQuestion = '';
+    } else if (line.startsWith('**Audio:**')) {
+      audio = line.split('**Audio:**')[1].trim();
+    } else if (line.startsWith('**Image:**')) {
+      image = line.split('**Image:**')[1].trim();
+    } else if (line.startsWith('#### ')) {
+      flushEntry();
+      question = line.substring(5);
+    } else if (line === '---') {
+      flushEntry();
+    } else if (line.length > 0 && line !== '___') {
+      answers.push(line);
+    }
+  }
+
+  flushEntry();
+  window.respondImageMap = respondImageMap;
+  initializeInteractions();
+}
+
+let lastRenderedId = null;
+
+function updateGalleryOnScroll() {
+  const gallery = document.querySelector('.interview-gallery');
+  const responds = document.querySelectorAll('[id^="respond-"]');
+  const imageMap = window.respondImageMap || {};
+  let currentIndex = -1;
+
+  for (let i = 0; i < responds.length; i++) {
+    const rect = responds[i].getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.5) {
+      currentIndex = i;
+    }
+  }
+
+  if (currentIndex === -1) {
+    gallery.classList.remove('show');
+    return;
+  }
+
+  const currentEl = responds[currentIndex];
+  const nextEl = responds[currentIndex + 1];
+
+  const currentId = currentEl.id;
+  if (lastRenderedId === currentId) return;
+
+  lastRenderedId = currentId;
+
+  const nextId = nextEl?.id;
+  const currentImgPath = imageMap[currentId];
+  const currentFallback = imageMap[currentId + '-fallback'];
+  const nextImgPath = nextEl ? imageMap[nextId] : null;
+  const nextFallback = nextEl ? imageMap[nextId + '-fallback'] : null;
+
+  gallery.classList.add('show');
+  // Create or reuse current image
+  let currentPic = gallery.querySelector('.current-image');
+  if (!currentPic) {
+    currentPic = createImgWithFallback(currentImgPath, currentFallback, 'current-image', currentId);
+    gallery.appendChild(currentPic);
+  } else {
+    currentPic.querySelector('source').srcset = currentImgPath;
+    currentPic.querySelector('img').src = currentFallback;
+  }
+
+  // // Create or reuse next image
+  // let nextPic = gallery.querySelector('.next-image');
+  // if (!nextPic) {
+  //   if (nextImgPath && nextFallback) {
+  //     nextPic = createImgWithFallback(nextImgPath, nextFallback, 'next-image', nextId);
+  //     gallery.appendChild(nextPic);
+  //   }
+  // } else {
+  //   if (nextImgPath && nextFallback) {
+  //     nextPic.querySelector('source').srcset = nextImgPath;
+  //     nextPic.querySelector('img').src = nextFallback;
+  //   }
+  // }
+
+  // Fade in gallery
+}
+
+function createImgWithFallback(webpSrc, fallbackSrc, className, alt) {
+  const picture = document.createElement('picture');
+  picture.className = className;
+
+  const source = document.createElement('source');
+  source.srcset = webpSrc;
+  source.type = 'image/webp';
+  picture.appendChild(source);
+
+  const img = document.createElement('img');
+  img.src = fallbackSrc; 
+  img.alt = alt;
+  img.loading = 'lazy';
+  picture.appendChild(img);
+
+  return picture;
+}
+
   function initializeInteractions() {
     generateNavigation();
     setupCursor();
     setupAudioSync();
     updateGalleryOnScroll();
     window.addEventListener('scroll', updateGalleryOnScroll);
+    setTimeout(() => {
+      window.dispatchEvent(new Event('scroll'));
+    }, 100);
   }
   
   function setupCursor() {
@@ -169,62 +252,7 @@ async function loadInterviewFromMarkdown(mdPath) {
     });
   }
   
-  function updateGalleryOnScroll() {
-    const gallery = document.querySelector('.interview-gallery');
-    const responds = document.querySelectorAll('[id^="respond-"]');
-    const imageMap = window.respondImageMap || {};
-    let currentIndex = -1;
   
-    for (let i = 0; i < responds.length; i++) {
-      const rect = responds[i].getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.5) {
-        currentIndex = i;
-      }
-    }
-  
-    if (currentIndex === -1) {
-      gallery.classList.remove('show');
-      gallery.innerHTML = '';
-      return;
-    }
-  
-    const currentEl = responds[currentIndex];
-    const nextEl = responds[currentIndex + 1];
-  
-    const currentImgPath = imageMap[currentEl.id];
-    const nextImgPath = nextEl ? imageMap[nextEl.id] : null;
-  
-    const existingImg = gallery.querySelector('img.current-image');
-    if (existingImg && currentImgPath && existingImg.src.includes(currentImgPath)) {
-      return; // don't reload same image
-    }
-  
-    gallery.classList.remove('show');
-  
-    setTimeout(() => {
-      gallery.innerHTML = '';
-  
-      if (currentImgPath) {
-        const currentImg = document.createElement('img');
-        currentImg.src = currentImgPath;
-        currentImg.alt = currentEl.id;
-        currentImg.className = 'current-image';
-        gallery.appendChild(currentImg);
-      }
-  
-      if (nextImgPath && nextImgPath !== currentImgPath) {
-        const nextImg = document.createElement('img');
-        nextImg.src = nextImgPath;
-        nextImg.alt = nextEl.id;
-        nextImg.className = 'next-image';
-        gallery.appendChild(nextImg);
-      }
-  
-      // force reflow to trigger animation
-      void gallery.offsetWidth;
-      gallery.classList.add('show');
-    }, 100);
-  }
   function setupAudioSync() {
     const respondElements = document.querySelectorAll('[id^="respond-"]');
     let currentPlaying = null;

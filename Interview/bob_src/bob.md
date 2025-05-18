@@ -187,6 +187,7 @@ America is becoming more of a service industry, like graphic designers, than a m
 #### How would you, as the owner of Meridian Printing, deal with all the changes and circumstances we have right now?
 
 **Audio:** bob_src/bob_4-1-1.wav
+**Image:** bob_src/2-4-6.png
 
 
 So remember I told you we're probably not gonna print your yearbook in this location. We're gonna print it at one of our locations. A week and a half ago, we sold Meridian Printing. So I'm not the owner of Meridian Printing. 
