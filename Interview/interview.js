@@ -9,11 +9,13 @@ async function loadInterviewFromMarkdown(mdPath) {
   let question = '', audio = '', image = '', answers = [];
   let lastQuestion = '', respondId = 1;
   const respondImageMap = {};
+  let imageCaption = '';
 
   function flushEntry() {
     if (answers.length === 0) {
       audio = '';
       image = '';
+      imageCaption = '';
       return;
     }
 
@@ -52,9 +54,13 @@ async function loadInterviewFromMarkdown(mdPath) {
 
     if (image) {
       const webpPath = image.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-      respondImageMap[div.id] = webpPath;
-      respondImageMap[div.id + '-fallback'] = image;
+      respondImageMap[div.id] = {
+        webp: webpPath,
+        fallback: image,
+        caption: imageCaption
+      };
     }
+    
 
     audio = '';
     image = '';
@@ -90,7 +96,10 @@ async function loadInterviewFromMarkdown(mdPath) {
     } else if (line.startsWith('#### ')) {
       flushEntry();
       question = line.substring(5);
-    } else if (line === '---') {
+    } else if (line.startsWith('**Image_caption:**')) {
+      imageCaption = line.split('**Image_caption:**')[1].trim();
+    }
+    else if (line === '---') {
       flushEntry();
     } else if (line.length > 0 && line !== '___') {
       answers.push(line);
@@ -130,15 +139,37 @@ function updateGalleryOnScroll() {
 
   lastRenderedId = currentId;
 
-  const nextId = nextEl?.id;
-  const currentImgPath = imageMap[currentId];
-  const currentFallback = imageMap[currentId + '-fallback'];
-  const nextImgPath = nextEl ? imageMap[nextId] : null;
-  const nextFallback = nextEl ? imageMap[nextId + '-fallback'] : null;
+  const currentData = imageMap[currentId];
+  if (!currentData) {
+    gallery.classList.remove('show');
+    return;
+  }
+
+  const { webp: currentImgPath, fallback: currentFallback, caption: currentCaption } = currentData;
+
 
   gallery.classList.add('show');
   // Create or reuse current image
+
+  
   let currentPic = gallery.querySelector('.current-image');
+let currentCaptionEl = gallery.querySelector('.image-caption');
+
+if (!currentPic) {
+  currentPic = createImgWithFallback(currentImgPath, currentFallback, 'current-image', currentId);
+  gallery.appendChild(currentPic);
+} else {
+  currentPic.querySelector('source').srcset = currentImgPath;
+  currentPic.querySelector('img').src = currentFallback;
+}
+
+if (!currentCaptionEl) {
+  currentCaptionEl = document.createElement('div');
+  currentCaptionEl.className = 'image-caption';
+  gallery.appendChild(currentCaptionEl);
+}
+
+currentCaptionEl.innerText = currentCaption || '';
   if (!currentPic) {
     currentPic = createImgWithFallback(currentImgPath, currentFallback, 'current-image', currentId);
     gallery.appendChild(currentPic);
@@ -147,21 +178,6 @@ function updateGalleryOnScroll() {
     currentPic.querySelector('img').src = currentFallback;
   }
 
-  // // Create or reuse next image
-  // let nextPic = gallery.querySelector('.next-image');
-  // if (!nextPic) {
-  //   if (nextImgPath && nextFallback) {
-  //     nextPic = createImgWithFallback(nextImgPath, nextFallback, 'next-image', nextId);
-  //     gallery.appendChild(nextPic);
-  //   }
-  // } else {
-  //   if (nextImgPath && nextFallback) {
-  //     nextPic.querySelector('source').srcset = nextImgPath;
-  //     nextPic.querySelector('img').src = nextFallback;
-  //   }
-  // }
-
-  // Fade in gallery
 }
 
 function createImgWithFallback(webpSrc, fallbackSrc, className, alt) {

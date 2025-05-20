@@ -7,6 +7,7 @@
 **Audio:** bob_src/bob_1-1.wav
 
 **Image:** bob_src/1-1.png
+**Image_caption:** Meridian Printing
 
 I'm Bob Nangle. So I'm one of the owners of Meridian Printing. We're a commercial printing company that specializes in sheet fed offset print. As for my personal background, I'm a Rhode Island person who grew up here, went to University of Rhode Island for college. My degree is more in finance and accounting. Out of school, I went to work for a printing company in Connecticut and they were doing what's called business forms. So it would be 3 pot forms, computer paper with the pin holes along the side, carbon paper that used to be, (well before your time) before carbonless paper. I was in that printing industry for a few years, and then I moved back to Rhode Island and eventually ended up coming to work here in Meridian Printing.
 
