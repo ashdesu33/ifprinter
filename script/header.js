@@ -2,7 +2,6 @@ let header = "";
 const headerContainer= document.querySelector('.header').innerHTML;
 header = `
     <p id="header-home" onclick="home()">If every body is a printer</p>
-    <p id="header-directory"> about </p>
 `
 document.querySelector('.header').innerHTML = header;
 

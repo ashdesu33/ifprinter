@@ -23,8 +23,8 @@
     font-weight: normal;
   }
   @font-face {
-    font-family: 'space_mono';
-    src: url('src/font/SpaceMono-Regular.ttf') format('truetype');
+    font-family: 'elm_mono';
+    src: url('src/font/Elm-Mono.ttf') format('truetype');
     font-weight: normal;
   }
   
@@ -103,23 +103,29 @@
   }
   
   .header {
+    position: sticky;
     font-family: 'routed-gothic-wide';
     display: inline-flex;
     width: 100%;
-    justify-content: space-between;
+    z-index: 998;
+    top: 5%;
+    justify-content: center;
     align-items: center;
     text-transform: capitalize;
-    mix-blend-mode: darken;
   }
   .header p {
     margin: 2% 3% 0 3%;
     font-size: 20px;
-    mix-blend-mode: darken;
+    background-color: #f3f3f3;
+  }
+  .header:hover{
+    text-decoration: underline;
   }
   
   #checkerboard {
     display: flex;
     width: 100vw;
+    padding-top: 12%;
   }
   .checker-unit {
     height: 100%;
@@ -221,6 +227,9 @@
     line-height: 26px;
     padding-bottom: 5%;
     color: #5d5d5d;
+  }
+  .timestamp{
+    font-family: 'elm_mono';
   }
   
   .answer, .interview-main-title, .interview-link,
@@ -404,6 +413,10 @@
       scale:1;
       mix-blend-mode: multiply;
       padding-bottom: 5%;
+      top: 2%;
+    }
+    .header p{
+      background: none;
     }
   
     .note-gallery img {
