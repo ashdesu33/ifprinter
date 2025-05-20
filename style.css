@@ -12,14 +12,19 @@
     font-style: normal;
   }
   @font-face {
-    font-family: 'routed-gothic';
-    src: url('src/font/AVHersheySimplexMedium.ttf') format('truetype');
+    font-family: 'hershey_regular';
+    src: url('src/font/Hershey-Noailles-Futura-Simplex-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
   }
   @font-face {
     font-family: 'authentic';
     src: url('src/font/authentic-sans-90.otf') format('opentype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'space_mono';
+    src: url('src/font/SpaceMono-Regular.ttf') format('truetype');
     font-weight: normal;
   }
   
@@ -149,7 +154,7 @@
   .interview-link {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     font-family: 'authentic';
     font-size: 15px;
@@ -174,7 +179,7 @@
   .link-sub-title {
     margin: 0;
     padding: 0;
-    font-family: 'routed-gothic';
+    font-family: 'hershey_regular';
   }
   .link-main-title {
     margin: 0;
@@ -190,7 +195,7 @@
   
   .interview-info {
     padding-top: 5%;
-    font-family: 'routed-gothic';
+    font-family: 'hershey_regular';
     margin: 2% 12% 0 12%;
     font-size: 20px;
   }
@@ -204,7 +209,7 @@
   }
   
   .question {
-    font-family: 'routed-gothic';
+    font-family: 'hershey_regular';
     font-size: 22px;
     line-height: 28px;
     margin-bottom: 3%;

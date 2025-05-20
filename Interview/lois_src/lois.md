@@ -6,6 +6,7 @@
 #### Can you provide a little intro of who you are and what you define your profession?
 
 **Image:** lois_src/9.png
+**Image_caption:** Linotype Machine @DWRI
 
 My name is Lois Harada. I'm an artist and printmaker. I work at DWRI Letterpress, which is a commercial letterpress print shop located in Providence.
 
@@ -15,6 +16,8 @@ I've worked here for about 14 years. When I started, I was a part-time press ope
 ####  So you start the relationships with the press first, and then gradually drift more into a designer role.
 
 **Image:** lois_src/9.png
+**Image_caption:** Linotype Machine @DWRI
+
 
 Exactly. 
 
@@ -23,6 +26,7 @@ When I started working for Dan it was in a much smaller space than it is now. I 
 ####  What's your relationship with "printing"?
 
 **Image:** lois_src/2.png
+**Image_caption:** Color and Paper Sample @DWRI
 
  I studied printmaking at RISD, and I graduated in 2010. So for me, print is the way that I express myself and is a medium I always go back to. Commercial printing is more appealing to me because you can make a lot of things very quickly, whereas traditional printmaking is super precious.  For instance, I have some new intaglio prints right and each print is $500 while a letterpress print could be free, or it could be $10, $20, $50. To me, the economy of commercial printing is appealing.
 
@@ -33,6 +37,7 @@ I think print is just how my brain works at this point. So I always think, okay,
 ### Some History
 #### How did DWRI start?
 **Image:** lois_src/3.png
+**Image_caption:**  Linotype Machine @DWRI
 
 Dan started DWRI 20 or 21 years ago.  His first introduction to commercial printing after studying traditional printmaking was offset printing. He worked at a bunch of different presses in DC and in Rhode Island including Meridian as a paper feeder (his job was to put the paper into the presses).
 
@@ -41,7 +46,8 @@ He started to transition to letterpress printing by taking jobs for friends like
 ---
 #### What is the workflow for the current press?
 
-**Image:** lois_src/4.png
+**Image:** lois_src/3.png
+**Image_caption:**  Lois Operating the Linotype Machine @DWRI
 
 Ideally files from clients are set up in a way that we can use (vector based text or outlined type or packaged files). We spend a lot of time going back and forth as part of the pre-press process. We keep getting files from Canva now too which is not the best. We figured out a few workarounds for Canva, but it's still not an ideal process. Sometimes designers too are used to just working in digital formats too so making the jump to print can be new. Once files are in, they head to Tom to create printing plates and order in supplies and then off to the presses. 
 
@@ -49,6 +55,7 @@ Ideally files from clients are set up in a way that we can use (vector based tex
 ### The Letterpress vs The Digital World
 #### Why do you think people choose letterpress instead of digital prints? 
 **Image:** lois_src/5.png
+**Image_caption:** Type Drawer @DWRI
 
 Part of the charm of letterpress printing is that it is essentially a mechanized form of relief printing. So you can feel the surface of the sheet and you can feel that print. Something is actually pushed into the surface of the sheet, meaning I can also use super thick papers that you can't run through a digital printer. 
 
@@ -58,6 +65,7 @@ The other thing is that it's a really accurate color process. If you give me the
 #### I do notice a lot of DWRI clients are using letterpress for important personal events too, and I assume the physical touch gives that intimacy.
 
 **Image:** lois_src/6.png
+**Image_caption:** Metal Cast Type @DWRI
 
 Yes, but sometimes we will swap in digital printing for some elements due to the budget limits, and honestly, digital printing has gotten a lot better in the last couple years. For instance, we work with a women owned shop in Massachusetts that has an indigo press that creates really nice work. 
 
@@ -68,18 +76,21 @@ One challenging part mixing with digital is that it is always gonna wobble a lit
 By working here so long, I now design in a way that will hopefully be easy to print, even though it looks complicated. We're not doing anything revolutionary, but our trademark is simple and elegant–which is what Dan likes to say. So we always try to design things in such a way where they'll print well.
 
 Every job is a challenge, which is good. People also don't want to wait for anything anymore! They need everything tomorrow and our lead time is about three weeks depending on the job.
+
 ---
 
 ### About the future
 #### How do DWRI promote itself? How do the press make sure the machine keeps running?
 **Image:** lois_src/7.png
+**Image_caption:** Work Sample with Mix of Digital Printing & Letterpress @DWRI
  So right now we don't do any advertising. We are just word of mouth and we're busy. We've been trying to think about advertising forever, but it's just hard. We don't even send a newsletter.
 
 We do Instagram occasionally. That's somewhere we could start to think about advertising, because we can start to shift our client base. For instance, we do a lot of printing for colleges. We would like to do more printing for colleges because Williams College, for instance, sends out a really nice acceptance letter to its new students, which is so nice. Nothing too crazy, two or three colors, letterpress printed, and you can imagine how students are going to be excited when they open the package. 
 
-—
+---
 #### Do you think one day letterpress is going to be obsolete? What do you think the future print is going to be when there is so much anxiety of rapidly developing technology like AI.
 **Image:** lois_src/8.png
+**Image_caption:** Lois Operating the Linotype Machine @DRWI
 
  I'm not worried that letterpress printing is going to go away.
 
@@ -96,5 +107,7 @@ I will say too, it's interesting now that people have more access to “design�
 ---
 
 #### What is your favorite tool?
-**Image:** lois_src/9.png
+**Image:** lois_src/8.png
+**Image_caption:** Lois Operating the Linotype Machine @DRWI
+
 I like the Ludlow Typecasting Machine! It has a crucible of hot metal in the back and can cast new type from brass moulds. It also has fewer moving parts than the Linotype which makes me feel like I have a better understanding of how it works. It has some special fonts too that it casts that are a little quirky. 
