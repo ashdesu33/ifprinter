@@ -12,13 +12,28 @@
 <script src="https://unpkg.com/@barba/core"></script>
  </head>
  <body>
-    
+  <svg style="display: none; margin:0; padding:0;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+    <filter id="displacementFilter">
+      <feTurbulence type="turbulence" baseFrequency="1" numOctaves="1" result="turbulence"/>
+      <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+      <feComponentTransfer>
+        <feFuncR type="discrete" tableValues="0 1 1" />
+        <feFuncG type="discrete" tableValues="0 1 1" />
+        <feFuncB type="discrete" tableValues="0 1 1" />
+        <feFuncA type="discrete" tableValues="0 1 1" />
+      </feComponentTransfer>
+    </filter>
+    </defs>
+</svg>
+  <div class="reveal-mask"></div>
+  <div class="move">
             <div id="checkerboard"></div>
             <div class="header"></div>
         <div class="interview-info">
             <div class="interview-sub-title">Interview with Bob Nangle</div>
             <div class="interview-main-title">On Press: The Memory, Running Machine, and Meridian Printing</div>
-            <img src="bob_src/cover.png" style="filter: brightness(1.1) blur(0.5px) url(#filter) sepia(0.6) hue-rotate(-20deg); ">
+            <img src="bob_src/cover.png" style="">
             <div class="interview-intro">
                 <i>
                     The most fantastic person in the world. The greatest parent. The greatest husband. I can't believe this person even existed. Let me introduce you to–
@@ -28,12 +43,13 @@
                 </p>
             </div>
         </div> 
+        <article class="interview">
+        </article>  
+        </div>
         <nav id="nav-section"></nav>
         <nav id="nav-page"></nav>
         
         <div class="interview-gallery"></div>
-        <article class="interview">
-        </article>  
          
         
   <script src="../script/header.js"></script>

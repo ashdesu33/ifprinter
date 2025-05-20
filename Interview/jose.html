@@ -1,0 +1,53 @@
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if every man is a printer</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="interview.css">
+  <link rel="icon" type="image/png" href="../src/favicon.png" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lancelot&family=Libre+Barcode+128&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+ </head>
+ <body>
+  <div class="reveal-mask"></div>
+  <div class="move">
+    <div id="checkerboard"></div>
+    <div class="header"></div>
+  <div class="interview-info">
+    <div class="interview-sub-title">Interview with José r. Menéndez</div>
+    <div class="interview-main-title">Small Print, Small Place, but Nothing is Small</div>
+    <img src="jose_src/cover.png" style="filter: brightness(1.1) blur(0.5px) url(#filter) sepia(0.6) hue-rotate(-20deg);">
+    <div class="interview-intro">
+      <p>
+        I always hear people complain about how small or boring the Providence area is. However, the more research I’ve done, the more I realize how little I actually know about the place I’ve lived in for the past four years.</p>
+      <p>Discovering Buena Gráfica Social Studio was one of those moments. During a degree project meeting, Anastasiia mentioned that there’s a studio in Pawtucket that might have worked on projects overlapping with my research interests. So I sent a cold email to the studio, and to my surprise Tatiana and José responded to my interview request quickly. Tatiana was unfortunately sick on the day we had scheduled, but learning from José about the studio and their practice became one of the most magical moments in thinking about design at scale—</p>
+    </div>
+  </div> 
+
+<article class="interview"></article>
+</div>
+  <nav id="nav-section"></nav>
+  <nav id="nav-page"></nav>
+  <div class="interview-gallery"></div>
+  </article>  
+  <script src="../script/header.js"></script>
+<script src="interview.js"></script>
+<script>
+        loadInterviewFromMarkdown("jose_src/jose.md");
+       initializeInteractions()   
+</script>
+</body>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="filter">
+      <feComponentTransfer>
+        <feFuncG class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncB class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncA class="transfer-func" type="discrete" tableValues="0 1 1" />
+        <feFuncR class="transfer-func" type="discrete" tableValues="0 1 1" />
+      </feComponentTransfer>
+    </filter>
+</svg>
+</html>

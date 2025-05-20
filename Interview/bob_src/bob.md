@@ -197,6 +197,7 @@ Then a digital printer came around, and we said we're gonna get a digital printe
 
 ---
 **Audio:** bob_src/bob_4-1-2.wav
+**Image:** bob_src/2-4-6.png
 Our employees who started here thirty five years ago when they were 30 years old and now 65 years old. So we have employees that 90% of our workforce is 60 years and older which means they're gonna retire this week, this year, next year, five years.
 
 We have 40 employees, and we lose 10 over the next five years. How are we gonna replace them? They call you. You're young. You wanna run a print. How do we find someone young who wants to come in and run a print. It's harder and harder to do.

@@ -5,7 +5,7 @@
   <title>if every man is a printer</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="interview.css">
-  <link rel="stylesheet" href="lois_src/lois_style.css">
+  <!-- <link rel="stylesheet" href="lois_src/lois_style.css"> -->
   <link rel="icon" type="image/png" href="../src/favicon.png" >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,32 +13,34 @@
 <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
  </head>
  <body>
+  <div class="reveal-mask"></div>
+  <div class="move">
     <div id="checkerboard"></div>
     <div class="header"></div>
   <div class="interview-info">
     <div class="interview-sub-title">Interview with Lois Harada</div>
     <div class="interview-main-title">Nothing is Replaceable</div>
-    <img src="lois_src/cover.png" style="filter: brightness(1.1) blur(0.5px) url(#filter) sepia(0.6) hue-rotate(-20deg);">
+    <img src="lois_src/tets.png" style="filter: brightness(1.1) blur(0.5px) url(#filter) sepia(0.6) hue-rotate(-20deg);">
     <div class="interview-intro">
+      <p>
+        I first learned about Lois in my junior year Type I class with Emily Rye. At the time, I was still very lost in the whole graphic design sphere. Emily shared Lois’s website with me and said, <i>you know, graphic design can be about a lot of things, and I think you can gain some inspiration from Lois’s work.</i>
+      </p>
+      <p>Lois ended up becoming one of the most important mentors I met at RISD, someone who shaped my understanding of design, production, and the Providence printing scene. Lois provided incredible support for both of my CSP projects across junior and senior year. She is always present to share resources and offer critical feedback, even as she navigated our often-incomprehensible schedules and her own work at the local letterpress shop, DWRI.</p>
+      <p>When I decided to start this project, the first person I reached out to was Lois. She has worked at DWRI for about 14 years, and I was curious about her experience with the shop and how she feels about the rapidly changing digital era. We sat down at the guest table in DWRI and started the conversation—</p>
     </div>
   </div> 
+
+<article class="interview"></article>
+</div>
   <nav id="nav-section"></nav>
   <nav id="nav-page"></nav>
   <div class="interview-gallery"></div>
-  <article class="interview">
   </article>  
   <script src="../script/header.js"></script>
-  <!-- <script src="navigation.js"></script> -->
   <script src="bob_src/bob.js"></script>
 <script src="interview.js"></script>
 <script src="lois_src/lois_interaction.js"></script>
 <script>
-//   async function init() {
-//     loadInterviewFromMarkdown("lois_src/lois.md");
-//     organizeInterview();
-//   }
-
-//   init();
         loadInterviewFromMarkdown("lois_src/lois.md");
        initializeInteractions()   
 </script>

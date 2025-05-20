@@ -1,6 +1,7 @@
 ## Who is Julia?
 ### From The Other Side of the Country
 #### Can you give me a short introduction of who you are and what’s your profession?
+**Image:** julia_src/1.png
 
 My name is Julia Gualtieri.  I am currently working as a Typeshop technician in RISD, and I also teach the Silkscreen Workshop  in the department.
 
@@ -13,6 +14,7 @@ That’s where I first started doing printmaking and I really haven't stopped si
 ## Living with the Print
 ### To Start
 #### I know you have been working as a press operator, designer, print artist, and educator. Would you mind sharing experiences working with all these specialties?
+**Image:** julia_src/1.png
 
 I move around a lot of things.
 
@@ -21,12 +23,14 @@ I am a maker. I make things, as part of designing things. If you're a printer, a
 ---
 
 ### Print & Design
+**Image:** julia_src/3.png
 
 A curator at the DeCordova Museum in Massachusetts had seen something I drew and contacted me to design some materials for a site specific exhibition. One thing that was really fun about this project is that since this was an environmentally focused project, I found this company in Nebraska that hand makes paper and they implant it with seeds. I was able to work with the museum to produce a large order of this custom paper that was implanted with carrot seeds. We letterpress on the paper as the programming card. The idea is, it's not evergreen, once the events pass and you don't need the card anymore, you could just put it in the ground and carrots would grow.
 
 ---
 
 ### Education & Print
+**Image:** julia_src/4.png
 
 I was the Silk Screen mentor at New Urban Arts for many years. New Urban Arts is a free community studio in Providence for high school students who work with adult artist mentors. 
 
@@ -35,6 +39,7 @@ I was the Silk Screen mentor at New Urban Arts for many years. New Urban Arts is
 ---
 
 ### Commercial Press
+**Image:** julia_src/5.png
 
 In 2011 a friend of mine was working at a local, Offset and letterpress shop. And that makes me think I'd really love to work in a commercial shop. I worked at a really small commercial shop called Black Cat Graphics in South Providence from 2011 to 2017.
 
@@ -46,6 +51,7 @@ The owner has a really awesome connection to the radical political printing scen
 ## The City
 ### Staying in Providence
 #### What led you to stay in Providence?
+**Image:** julia_src/6.png
 
 In the middle of my graduate program, I kind of fell in love with Providence. I didn’t necessarily know this before moving here, but it’s a really printy town. There’s a thriving print culture and an active print scene. It was a happy accident and I was delighted to discover it.
 
@@ -63,6 +69,7 @@ I finished my degree in 2009 and decided to make Providence my home.
 ---
 ### The Change
 #### What do you feel that has changed the most about Providence?
+**Image:** julia_src/6.png
 The biggest shift I’ve felt is in affordability. When I first moved here, rent was really cheap. I was working a scrappy print shop job for about $11 an hour, and that was enough because rent was so low. That gave me flexibility to experiment, to learn, to focus on the work rather than just surviving.
 But over time, Providence has become more expensive for many reasons. Rent is skyrocketing, and it has created a real housing crisis. I think that’s had a big impact on the arts community.
 Many of the artists I’ve known through the years were only able to do what they did because Providence was affordable. When that changes, the space for experimentation and creative risk starts to shrink. It becomes harder to make ends meet, which limits what feels possible in a city.
@@ -73,6 +80,7 @@ But I also want to recognize that people are still doing cool, interesting, weir
 ## The Machine
 ### The Type Shop
 #### What is your experience working with RISD Type Shop? How do you accommodate the latest print technology with space?
+
 I’m still fairly new to the shop tech position at RISD, so I’ve mostly been listening to what students are asking for and trying to respond to that. Ed has been here longer, so he leads some of the bigger decisions.
 For example, for years students kept asking to print with white ink. The answer had always been, "We don’t have any white ink printers, we don’t do that here." But eventually, Ed found a way to make it happen. We repurposed one of our older laser printers and figured out how to get it to accept white toner. It wasn’t fancy, but it worked.
 So I’d say our approach is very responsive. We’re not necessarily thinking about the commercial printing industry as a whole. We’re focused on this small shop and what our students are excited about. If a certain request keeps coming up, we try to find a way to accommodate it.
@@ -89,5 +97,6 @@ Looking around, I'm also amazed by the tools we have here. We can make our own p
 ---
 
 #### It’s interesting to see how the shop responds to student demand, but also how the shop itself shapes the work that gets made. 
+**Image:** julia_src/7.png
 The tools and materials in the space definitely influence the visual culture around them. And I think that’s really special. The way students inspire each other and build on what’s available is one of my favorite things about working in a print shop.I’m not saying I don’t appreciate digital work or find digital tools fascinating. But when I look at a printed piece, I often know how it came to be. And that knowledge makes me love it more.
 What I really enjoy is seeing students discover the tools. When they have an idea and start to explore how they can bring it to life with the materials right here, that’s a really rewarding process to watch. And that cycle of discovery and invention will continue. There’s still so much life left in the analog-digital conversation. It has a lot more life to live. 

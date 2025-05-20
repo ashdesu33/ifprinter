@@ -1,26 +1,63 @@
-## To the dearest
+## This project won't be possible without:
 
-My mom, dad, and sister for supporting me
+My mom, dad, and sister, 
+for always supporting me.
 
-Bob from Meridian Printing, Lois from DWRI, Bud from Allegra, José from buena gráﬁca social studio, Julia from RISD Typeshop for sharing their stories with printing in Providence area, RI
+Bob from Meridian Printing, Lois from DWRI, 
+José from Buena Gráfica Social Studio, and Julia from the RISD Typeshop, for sharing your stories with printing in the Providence.
 
-Ed from RISD Typeshop, Karunmay from Brown Design Workshop, Ray from RI Computer Museum, Coworks for offering technical support and physical workspace
+Anastasiia Raina, 
+for mentoring me throughout this project.
 
-Anastasiia Raina for mentoring me through the project 
+Anther Kiley and Minkyoung Kim, 
+for sharing your thoughtful and generous review.
 
-Nor and Lily, my fellow Feetwashing Heaven member, for being my most talented friend, crafter, and artist, and borrowing these beautiful artworks for my final presentation
+Ed from the RISD Typeshop, Karunmay from Brown Design Workshop, and Evan from 
+Coworks, for all the technical support and for offering physical workspace.
 
-Andrew for sharing his beautiful font Autos for this project
-Antoine for publishing Hershy Noailles Futura 
-Paul Bourke and Gary Gofstein for Compiling A. V. Hershey font 
+Nor and Lily, my fellow Feetwashing Heaven members and my most talented friends, 
+crafters, and artists, for lending your 
+beautiful artworks for my final presentation.
 
-Izzy for inviting me to her thesis film and sharing all the resources
+Andrew, 
+for sharing your beautiful font Autos 
 
+Radhika and Li, 
+for sponsoring the paper.
 
-Sejal, Isabel, Scarlette, Li June, Mandy, Kevin for giving me valuable feedback
-Jolin for helping me sheetfed the acetate  
-Ashley, Li, Sophie, Ryan for holding all those soup night
-Tanvi, Lucas for being my dearest Indy Schema HQ teammate
+Sejal, Isabel, Scarlette, Li June, and Kevin, 
+for your invaluable feedback.
 
+Jolin, 
+for helping me sheet-feed the acetate.
 
-And all the people who has direct/indirectly contribute to this project 
+Jake, 
+for teaching me how to draw schematic using KiCad
+
+Izzy, for inviting me to your thesis film and generously sharing your resources.
+
+@Lululudexiaobai (陆陆陆的小白), 
+for open-sourcing the pen plotter model.
+
+Antoine, 
+for publishing Hershey Noailles Futura.
+
+Ashley, Li, Sophie, Ryan, and Andrew, 
+for hosting all those soup nights
+
+Hyunmin, 
+for being my lithography printing partner
+
+Tanvi, Lucas, and Izzy, for being my dearest Indy Schema HQ teammates.
+
+RISD GD, for providing all the resource
+
+LCPCB, for manufacturing my PCB board.
+
+Arduino, Inkscape, Universal Gcode Sender, EasyEDA, and ChatGPT, for software support.
+
+Guangzhou, Hefei, Linquan, and Providence,
+for grounding me and being my home
+
+Thank you!
+

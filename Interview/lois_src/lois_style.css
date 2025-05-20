@@ -47,7 +47,3 @@ body{
     padding-top: 10px;
     background-color: #eee;
   }
-
-  .interview-gallery{
-    filter:contrast(0.7) brightness(1.5) sepia(0.2);
-  }

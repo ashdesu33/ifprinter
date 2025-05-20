@@ -10,6 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .header{
   scale:0.7;
 }
@@ -19,6 +20,17 @@
     height: 5px;
     background: #eee;
     margin-top: 10px;
+  }
+.move{
+  animation: toTop 0.3s ease-in forwards;
+}
+  @keyframes toTop {
+    from {
+      transform: translateY(500px);
+    }
+    to {
+      transform: translateY(0px);
+    }
   }
 
 .interview h2{
@@ -70,8 +82,8 @@
     position: fixed;
     top: 10%;
     left: 0;
-    width: 50%;
-    /* max-width: 700px; */
+    max-width: 55%;
+    max-height: 50vh;
     z-index: -1;
     opacity: 0;
     pointer-events: none;
@@ -83,7 +95,8 @@
   .interview-gallery picture {
     display: block;
     width: 100%;
-    height: auto;
+    max-height: 50%;
+
     position: relative;
     opacity: 0;
     transition: opacity 0.6s ease;
@@ -96,7 +109,7 @@
   .interview-gallery img {
     display: block;
     width: 100%;
-    height: auto;
+    max-height: 50%;
     object-fit: contain;
     mix-blend-mode: darken;
     filter: blur(0);
@@ -115,6 +128,25 @@
     filter: blur(2px);
     transition: all 1s ease;
   }
+
+  .interview-info img{
+    animation: jumpyShift 2s steps(1) infinite;
+  }
+
+  @keyframes jumpyShift {
+    0%   { transform: translate(0px, 0px); filter: url(#filter); }
+    10%  { transform: translate(1px, -1px); filter: url(#displacementFilter) url(#filter); }
+    20%  { transform: translate(-1px, 1px); filter: url(#filter); }
+    30%  { transform: translate(1px, 1px); filter: url(#displacementFilter) url(#filter); }
+    40%  { transform: translate(-1px, -1px); filter: url(#filter); }
+    50%  { transform: translate(1px, 1px); filter: url(#displacementFilter) url(#filter); }
+    60%  { transform: translate(-1px, -1px); filter: url(#filter); }
+    70%  { transform: translate(1px, 1px); filter: url(#filter); }
+    80%  { transform: translate(-1px, -1px); filter: url(#filter); }
+    90%  { transform: translate(1px, 0px); filter: url(#displacementFilter) url(#filter); }
+    100% { transform: translate(0px, 0px); filter: url(#filter); }
+  }
+
   
 
   @media screen and (max-width: 900px) {

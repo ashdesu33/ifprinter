@@ -37,3 +37,10 @@ barba.init({
     }
   
   });
+  window.addEventListener('load', () => {
+    const mask = document.querySelector('.reveal-mask');
+    mask.classList.add('is-active');
+    setTimeout(() => {
+      mask.classList.remove('is-active');
+    }, 1000);
+  });
