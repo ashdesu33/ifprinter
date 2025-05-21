@@ -3,6 +3,7 @@
 #### Can you give me a short introduction of who you are and what’s your profession?
 **Image:** julia_src/1.png
 
+
 My name is Julia Gualtieri.  I am currently working as a Typeshop technician in RISD, and I also teach the Silkscreen Workshop  in the department.
 
 I grew up in California, and I knew as a young person I wanted to go into the art field in some way, but I didn't have a very good understanding, but I was drawn to art. I went to  University of California at Santa Cruz, and majored in art.
