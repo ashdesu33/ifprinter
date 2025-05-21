@@ -14,7 +14,7 @@ I’m also a co-founder and a partner at Buena Gráﬁca Social Studio with Tati
 
 ### The Form
 
-#### Can you share more about what kind of work you do in gráﬁca social studio?
+#### Can you share more about what kind of work you do in Buena Gráﬁca Social Studio?
 **Image:** jose_src/1.png
 
 Buena Gráﬁca is a platform we use to work with the Providence and regional community. We develop our practice together, but our different specialties allow our work to take many forms. Tati focuses a lot on typography and book design, and I have a background in spatial design. We take on traditional projects like visual identity, booklets, posters, websites, and communication design strategies, but it also branches out to community engagement, public art and wayfinding projects 
@@ -22,7 +22,7 @@ Buena Gráﬁca is a platform we use to work with the Providence and regional co
 Our communication systems take on many different forms, but printing is something we always come back to. We love printing because it’s a powerful way to bring people together. Me and Tatiana actually met through letterpress, as it is always a meaningful way to understand graphic design. We eventually decided to get letterpress and have used it to host workshops with organizations, often for team building. In almost every project, we try to include some kind of print piece, whether it’s a postcard or a poster. There’s no such thing as a “small” print. All printed materials can be powerful tools for communication and community engagement.
 
 ---
-### The Beginning of gráﬁca social studio
+### The Beginning of Buena Gráﬁca Social Studio
 #### I notice most of the studio's clients are in the realm of non-profit in Providence, can you tell us more about how the studio started and how you connected with these organizations?
 **Image:** jose_src/2.png
 
