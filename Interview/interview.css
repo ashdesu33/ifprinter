@@ -36,20 +36,21 @@
   align-items:start;
   text-decoration: none;
   color: #333;
-  padding: 5px 0 5px 0;               
+  padding: 20px 0 5px 0;               
   transition: all 0.2s ease;
   position: relative;
   background: transparent;     
-  height: 100%;                 
+  height: 150%;     
+  transform: translateY(-30%);             
   box-sizing: border-box;
 }
 
+.nav-link:hover{
+  transform: translateY(0%); /* slight downward nudge */
+  text-decoration: underline;
 
-.nav-link.active {
-  transform: translateY(4px); /* slight downward nudge */
-  font-weight: bold;
-  color: black;
 }
+
 
 .header{
   scale:0.7;

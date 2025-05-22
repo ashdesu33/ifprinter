@@ -33,8 +33,10 @@
   
   body {
     margin: 0;
+    padding: 0;
     width: 100%;
     overflow-x: hidden;
+    font-family: 'hershey_regular';
 
     background-image: url(src/Screenshot\ 2025-05-16\ at\ 2.49.33\ AM.png);
   }
@@ -155,6 +157,16 @@
     font-size: 25px;
     filter: url(#displacementFilter);
     padding:5%;
+  }
+
+    /* ========== THANKYOU ========== */
+  .if-you-are{
+    padding-top: 5vh;
+    display: flex;
+    font-family: 'elm mono';
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
   }
   
   /* ========== INTERVIEW STYLES ========== */
@@ -399,6 +411,9 @@
       filter:url(#displacementFilter) ;
       font-size: 30px;
       color: #000000;
+    }
+    .if-you-are{
+      text-align: center;
     }
     .to-the-dearest h2{
       display: flex;

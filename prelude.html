@@ -27,12 +27,12 @@
     </defs>
 </svg>
 <nav class="fixed-nav">
-  <a href="../index.html" class="nav-link" id="label1">Prelude</a>
-  <a href="bob.html" class="nav-link" id="label2">Bob</a>
-  <a href="lois.html" class="nav-link" id="label3">Lois</a>
-  <a href="jose.html" class="nav-link" id="label4">José</a>
-  <a href="julia.html" class="nav-link" id="label5">Julia</a>
-  <a href="" class="nav-link" id="label6">Coda</a>
+  <a href="prelude.html" class="nav-link" id="label1">Prelude</a>
+  <a href="Interview/bob.html" class="nav-link" id="label2">Bob</a>
+  <a href="Interview/lois.html" class="nav-link" id="label3">Lois</a>
+  <a href="Interview/jose.html" class="nav-link" id="label4">José</a>
+  <a href="Interview/julia.html" class="nav-link" id="label5">Julia</a>
+  <a href="coda.html" class="nav-link" id="label6">Coda</a>
 </nav>
   <div class="reveal-mask"></div>
   <div class="overlay" style="position:fixed; top:0;width: 100%; height:100%; background-color: rgb(201, 196, 203); mix-blend-mode: darken;opacity: 0.5;"></div>
@@ -41,12 +41,114 @@
             
         <div id="checkerboard"></div>
         <div class="header"></div>
-    </div>
+        <div>
+            <div class="image-gallery">
+            <picture id="gallery-image">
+              <source srcset="prelude/1.webp" type="image/webp" />
+              <img src="prelude/1.png" alt="prelude" />
+            </picture>
+          </div>
+          <div class="scroll-space"></div>
+
+        </div>
+
+        <div class="mobile-gallery">
+            <picture><source srcset="prelude/1.webp" type="image/webp"><img src="prelude/1.png" alt=""></picture>
+            <picture><source srcset="prelude/2.webp" type="image/webp"><img src="prelude/2.png" alt=""></picture>
+            <picture><source srcset="prelude/3.webp" type="image/webp"><img src="prelude/3.png" alt=""></picture>
+            <picture><source srcset="prelude/4.webp" type="image/webp"><img src="prelude/4.png" alt=""></picture>
+            <picture><source srcset="prelude/5.webp" type="image/webp"><img src="prelude/5.png" alt=""></picture>
+            <picture><source srcset="prelude/6.webp" type="image/webp"><img src="prelude/6.png" alt=""></picture>
+            <picture><source srcset="prelude/7.webp" type="image/webp"><img src="prelude/7.png" alt=""></picture>
+            <picture><source srcset="prelude/8.webp" type="image/webp"><img src="prelude/8.png" alt=""></picture>
+            <picture><source srcset="prelude/9.webp" type="image/webp"><img src="prelude/9.png" alt=""></picture>
+            <picture><source srcset="prelude/10.webp" type="image/webp"><img src="prelude/10.png" alt=""></picture>
+            <picture><source srcset="prelude/11.webp" type="image/webp"><img src="prelude/11.png" alt=""></picture>
+            <picture><source srcset="prelude/12.webp" type="image/webp"><img src="prelude/12.png" alt=""></picture>
+            <picture><source srcset="prelude/13.webp" type="image/webp"><img src="prelude/13.png" alt=""></picture>
+            <picture><source srcset="prelude/14.webp" type="image/webp"><img src="prelude/14.png" alt=""></picture>
+
+        </div>
+        <div class="bottom_nav" style="display:flex;width: 100%; height: 10vh;justify-items: center;">
+            <a href="Interview/bob.html" class="nav-link" id="label2">Next: The Press: Interview with Bob Nangle</a>
+        </div>
+  </div> 
 
         
          
-        
-  <script src="../script/header.js"></script>
+  <style>
+
+    .image-gallery {
+        position:sticky;
+        top: 60vh;
+        left: 17.5vw;
+        transform: translate(0%, -50%);
+        width: 65vw;
+        scale:1;
+        z-index: -1;
+    }
+
+    .image-gallery picture,
+    .image-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    .scroll-space {
+    height: 1000vh; /* Makes the page scrollable */
+    }
+
+    .mobile-gallery{
+        display: none;
+    }
+
+    @media screen and (max-width: 900px) {
+        .image-gallery {
+           display: none;
+        }
+        .scroll-space{
+            height: 10vh;
+        }
+
+        .mobile-gallery {
+            display: block;
+        }
+
+        .mobile-gallery picture {
+            width: 100%;
+            display: block;
+        }
+        .mobile-gallery img{
+            width: 100%;
+        }
+    }
+  </style>   
+  
+  
+
+
+
+  <script src="/script/header.js"></script>
+  <script>
+    const totalImages = 14;
+    const gallery = document.getElementById('gallery-image');
+    const source = gallery.querySelector('source');
+    const img = gallery.querySelector('img');
+  
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = scrollY / maxScroll;
+      const imageIndex = Math.min(
+        totalImages,
+        Math.max(1, Math.floor(scrollPercent * totalImages) + 1)
+      );
+  
+      source.srcset = `prelude/${imageIndex}.webp`;
+      img.src = `prelude/${imageIndex}.png`;
+    });
+  </script>
 
 
 </body>
