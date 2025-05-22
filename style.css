@@ -77,7 +77,7 @@
       opacity: 0;
     }
   }
-  
+
   section h2 {
     display:flex;
     padding-left:0;
@@ -152,7 +152,9 @@
   /* ========== THANKYOU ========== */
   .thankyou{
     font-family: 'authentic';
-    font-size: 12px;
+    font-size: 25px;
+    filter: url(#displacementFilter);
+    padding:5%;
   }
   
   /* ========== INTERVIEW STYLES ========== */
@@ -174,7 +176,7 @@
   }
   .interview-link img{
     display: flex;
-    justify-items: center;
+    align-content: space-around;
     width: 80%;
   }
   
@@ -186,6 +188,7 @@
     margin: 0;
     padding: 0;
     font-family: 'hershey_regular';
+    text-align: center;
   }
   .link-main-title {
     margin: 0;
